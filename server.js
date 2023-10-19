@@ -92,7 +92,7 @@ let heroes = {
 //     'attackType': ,
 //     'complexity': ,
 //     'spells':
-// }
+// },
 
 
 app.get('/', (req,res) => {
