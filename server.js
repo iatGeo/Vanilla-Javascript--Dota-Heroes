@@ -60,6 +60,27 @@ let heroes = {
         'complexity': 2,
         'spells': ['Sticky Napalm', 'Flamebreak', 'Firefly', 'Flaming Lasso']
     },
+    'beastmaster': {
+        'type': 'Universal',
+        'mainInfo': `SUMMONS BEASTS TO AID HIS HUNT`,
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ["Wild Axes", ["Call of the Wild Boar", "Call of the Wild Hawk"], "Inner Beast", "Primal Roar"]
+    },
+    'bloodseeker': {
+        'type': 'Agility',
+        'mainInfo': `CHASES DOWN LOW HEALTH ENEMIES WITH INCREASED SPEED`,
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Bloodrage', 'Blood Rite', 'Thirst', 'Rupture']
+    },
+    'bounty hunter': {
+        'type': 'Agility',
+        'mainInfo': `LOOTS AND COLLECTS BOUNTIES OFF OF HIS ENEMIES`,
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Shuriken Toss', 'Jinada', 'Shadow Walk', 'Track']
+    },
     'unknown': {
         'message': 'data not available'
     }
