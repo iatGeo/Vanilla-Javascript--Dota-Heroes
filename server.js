@@ -3,7 +3,7 @@ const app = express()
 const PORT = 8000
 
 
-let heroes = {
+const heroes = {
     'abaddon': {
         'type': 'Universal',
         'mainInfo': `SHIELDS HIS ALLIES OR HIMSELF FROM ATTACKS`,
@@ -81,6 +81,55 @@ let heroes = {
         'complexity': 1,
         'spells': ['Shuriken Toss', 'Jinada', 'Shadow Walk', 'Track']
     },
+    'brewmaster': {
+        'type': 'Universal',
+        'mainInfo': 'SPLITS INTO THREE ELEMENTAL SPIRITS WITH UNIQUE ABILITIES',
+        'attackType': 'Melee',
+        'complexity': 3,
+        'spells': ['Thunder Clap', 'Cinder Brew', 'Drunken Brawler', 'Primal Split']
+    },
+    'bristleback': {
+        'type': 'Strength',
+        'mainInfo': 'TAKES REDUCED DAMAGE WHEN FACING AWAY FROM ENEMIES',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Viscous Nasal Goo', 'Quill Spray', 'Bristleback', 'Warpath']
+    },
+    'broodmother': {
+        'type': 'Universal',
+        'mainInfo': 'HUNTS WITH HER ARMY OF SPIDERLINGS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Insatiable Hunger', 'Spin Web', 'Silken Bola', 'Spawn Spiderlings']
+    },
+    'centaur warrunner': {
+        'type': 'Strength',
+        'mainInfo': 'REFLECTS DAMAGE BACK TO HIS ATTACKERS',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Hoof Stomp', 'Double Edge', 'Retaliate', 'Stampede']
+    },
+    'chaos knight': {
+        'type': 'Strength',
+        'mainInfo': 'HAS STRONG BUT RANDOM DAMAGE OUTPUT',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Chaos Bolt', 'Reality Rift', 'Chaos Strike', 'Phantasm']
+    },
+    'chen': {
+        'type': 'Universal',
+        'mainInfo': 'CONVERTS CREEPS TO HIS CAUSE, BUILDING AN ARMY',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Penitence', 'Holy Persuasion', 'Divine Favor', 'Hand of God']
+    },
+    'clinkz': {
+        'type': 'Agility',
+        'mainInfo': 'STALKS INVISIBLY TO AMBUSH LONE ENEMIES',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Strafe', 'Tar Bomb', 'Death Pact', 'Skeleton Walk']
+    },
     'unknown': {
         'message': 'data not available'
     }
@@ -91,7 +140,7 @@ let heroes = {
 //     'mainInfo': ,
 //     'attackType': ,
 //     'complexity': ,
-//     'spells':
+//     'spells': []
 // },
 
 
