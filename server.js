@@ -207,6 +207,125 @@ const heroes = {
         'complexity': 1,
         'spells': ['Frost Arrows', 'Gust', 'Multishot', 'Marksmanship', {'shard': 'Glacier'}]
     },
+    'earth spirit': {
+        'type': 'Strength',
+        'mainInfo': 'DISABLES AND REPOSITIONS HIS ENEMIES',
+        'attackType': 'Melee',
+        'complexity': 3,
+        'spells': ['Boulder Smash', 'Rolling Boulder', 'Geomagnetic Grip', 'Stone Remnant', 'Magnetize', {'scepter': 'Enchant Remnant'}]
+    },
+    'earthshaker': {
+        'type': 'Stength',
+        'mainInfo': 'DISRUPTS ENEMY TEAM WITH HIS CHAIN STUNS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Fissure', 'Enchant Totem', 'Aftershock', 'Echo Slam']
+    },
+    'elder titan': {
+        'type': 'Strength',
+        'mainInfo': 'DAMAGES AND DISABLES WITH HIS ASTRAL SPIRIT',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Echo Stomp', 'Astral Spirit', 'Natural Order', 'Earth Splitter']
+    },
+    'ember spirit': {
+        'type': 'Agility',
+        'mainInfo': 'RAPIDLY STRIKES AND CHAINS HIS FOES',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Searing Chains', 'Sleight of Fist', 'Flame Guard', 'Activate Fire Remnant', 'Fire Remnant']
+    },
+    'enchantress': {
+        'type': 'Intelligence',
+        'mainInfo': 'ENCHANTS NEUTRAL CREEPS TO DO HER BIDDING',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Impetus', 'Enchant', "Nature's Attendants", 'Untouchable', {'shard': 'Sproink', 'scepter': 'Little Friends'}]
+    },
+    'enigma': {
+        'type': 'Universal',
+        'mainInfo': 'TRAPS AND DAMAGES ENEMIES IN A BLACK HOLE',
+        'attackType': 'Ranged',
+        'complexity': '2',
+        'spells': ['Malefice', 'Demonic Summoning', 'Midnight Pulse', 'Black Hole']
+    },
+    'faceless void': {
+        'type': 'Agility',
+        'mainInfo': 'CAN FREEZE HIS ENEMIES IN TIME',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Time Walk', 'Time Dilation', 'Time Lock', 'Chronosphere', {'shard': 'Reverse Time Walk'}]
+    },
+    'grimstroke': {
+        'type': 'Intelligence',
+        'mainInfo': 'DISABLES ENEMIES WITH A SWIPE OF HIS BRUSH',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Stroke of Fate', "Phantom's Embrace", 'Ink Swell', 'Soulbind', {'scepter': 'Dark Portrait'}]
+    },
+    'gyrocopter': {
+        'type': 'Agility',
+        'mainInfo': 'BARRAGES WITH HIS CANNON AND HOMING MISSILES',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Rocket Barrage', 'Homing Missile', 'Flak Cannon', 'Call Down']
+    },
+    'hoodwink': {
+        'type': 'Agility',
+        'mainInfo': 'SHACKLES HER ENEMIES TO TREES',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Acorn Shot', 'Bushwhack', 'Scurry', 'Sharpshooter', {'shard': "Hunter's Boomerang", 'scepter': 'Decoy'}]
+    },
+    'huskar': {
+        'type': 'Strength',
+        'mainInfo': 'SACRIFICES HIS HEALTH TO DEAL MORE DAMAGE',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Inner Fire', 'Burning Spear', "Berserker's Blood", 'Life Break']
+    },
+    'invoker': {
+        'type': 'Universal',
+        'mainInfo': 'WEAVES MAGIC WITH AN ARRAY OF SPELL COMBOS',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Quas', 'Wex', 'Exort', 'Invoke', ['Cold Snap', 'Ghost Walk', 'Ice Wall', 'E.M.P.', 'Tornado', 'Alacrity', 'Sunstrike', 'Forge Spirit', 'Chaos Meteor', 'Defeaning Blast']]
+    },
+    'io': {
+        'type': 'Universal',
+        'mainInfo': 'LINKS TO ITS ALLIES TO BUFF THEM',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Tether', 'Spirits', 'Overcharge', ['Spirits In', 'Spirits Out'], 'Relocate']
+    },
+    'jakiro': {
+        'type': 'Intelligence',
+        'mainInfo': 'FREEZES AND BURNS ENEMIES WITH MAGIC',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Dual Breath', 'Ice Path', 'Liquid Fire', 'Macropyre', {'shard': 'Liquid Frost'}]
+    },
+    'juggernaut': {
+        'type': 'Agility',
+        'mainInfo': 'SLICES THROUGH HIS ENEMIES WITH PRECISE STRIKES',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Blade Fury', 'Healing Ward', 'Blade Dance', 'Omnislash', {'scepter': 'Swiftslash'}]
+    },
+    'keeper of the light': {
+        'type': 'Intelligence',
+        'mainInfo': 'PROVIDES INSTANT MANA TO ALLIES',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Illuminate', 'Blinding Light', 'Chakra Magic', 'Solar Bind', 'Spirit Form', {'shard': 'Recall', 'scepter': 'Will-O-Wisp'}]
+    },
+    'kunkka': {
+        'type': 'Strength',
+        'mainInfo': 'DISRUPTS ENEMY POSITIONING AND DISABLES THEM',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Torrent', 'Tidebringer', 'X Marks the Spot', 'Ghostship', {'shard': 'Tidal Wave', 'scepter': 'Torrent Storm'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
