@@ -16,7 +16,7 @@ const heroes = {
         'mainInfo': `EARNS EXTRA GOLD FROM UNIT KILLS AND BOUNTY RUNES`,
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Acid Spray', 'Unstable Concoction', 'Corrosive Weaponry', 'Chemical Rage']
+        'spells': ['Acid Spray', 'Unstable Concoction', 'Corrosive Weaponry', 'Chemical Rage', {'shard': 'Berserk Potion'}]
     },
     'ancient apparition': {
         'type': 'Intelligence',
@@ -30,7 +30,7 @@ const heroes = {
         'mainInfo': `SLASHES HIS FOES WITH MANA-DRAINING ATTACKS`,
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Mana Break', 'Blink', 'Counterspell', 'Mana Void']
+        'spells': ['Mana Break', 'Blink', 'Counterspell', 'Mana Void', {'shard': 'Counterspell Ally', 'scepter': 'Blink Fragment'}]
     },
     'arc warden': {
         'type': 'Agility',
@@ -65,49 +65,49 @@ const heroes = {
         'mainInfo': `SUMMONS BEASTS TO AID HIS HUNT`,
         'attackType': 'Melee',
         'complexity': 2,
-        'spells': ["Wild Axes", ["Call of the Wild Boar", "Call of the Wild Hawk"], "Inner Beast", "Primal Roar"]
+        'spells': ["Wild Axes", ["Call of the Wild Boar", "Call of the Wild Hawk"], "Inner Beast", "Primal Roar", {'scepter': 'Drums of Slom'}]
     },
     'bloodseeker': {
         'type': 'Agility',
         'mainInfo': `CHASES DOWN LOW HEALTH ENEMIES WITH INCREASED SPEED`,
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Bloodrage', 'Blood Rite', 'Thirst', 'Rupture']
+        'spells': ['Bloodrage', 'Blood Rite', 'Thirst', 'Rupture', {'scepter': 'Blood Mist'}]
     },
     'bounty hunter': {
         'type': 'Agility',
         'mainInfo': `LOOTS AND COLLECTS BOUNTIES OFF OF HIS ENEMIES`,
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Shuriken Toss', 'Jinada', 'Shadow Walk', 'Track']
+        'spells': ['Shuriken Toss', 'Jinada', 'Shadow Walk', 'Track', {'shard': 'Friendly Shadow'}]
     },
     'brewmaster': {
         'type': 'Universal',
         'mainInfo': 'SPLITS INTO THREE ELEMENTAL SPIRITS WITH UNIQUE ABILITIES',
         'attackType': 'Melee',
         'complexity': 3,
-        'spells': ['Thunder Clap', 'Cinder Brew', 'Drunken Brawler', 'Primal Split']
+        'spells': ['Thunder Clap', 'Cinder Brew', 'Drunken Brawler', 'Primal Split', {'scepter': 'Primal Companion'}]
     },
     'bristleback': {
         'type': 'Strength',
         'mainInfo': 'TAKES REDUCED DAMAGE WHEN FACING AWAY FROM ENEMIES',
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Viscous Nasal Goo', 'Quill Spray', 'Bristleback', 'Warpath']
+        'spells': ['Viscous Nasal Goo', 'Quill Spray', 'Bristleback', 'Warpath', {'shard': 'Hairball'}]
     },
     'broodmother': {
         'type': 'Universal',
         'mainInfo': 'HUNTS WITH HER ARMY OF SPIDERLINGS',
         'attackType': 'Melee',
         'complexity': 2,
-        'spells': ['Insatiable Hunger', 'Spin Web', 'Silken Bola', 'Spawn Spiderlings']
+        'spells': ['Insatiable Hunger', 'Spin Web', 'Silken Bola', 'Spawn Spiderlings', {'scepter': "Spinner's Snare"}]
     },
     'centaur warrunner': {
         'type': 'Strength',
         'mainInfo': 'REFLECTS DAMAGE BACK TO HIS ATTACKERS',
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Hoof Stomp', 'Double Edge', 'Retaliate', 'Stampede']
+        'spells': ['Hoof Stomp', 'Double Edge', 'Retaliate', 'Stampede', {'scepter': 'Hitch a Ride'}]
     },
     'chaos knight': {
         'type': 'Strength',
@@ -128,28 +128,28 @@ const heroes = {
         'mainInfo': 'STALKS INVISIBLY TO AMBUSH LONE ENEMIES',
         'attackType': 'Ranged',
         'complexity': 2,
-        'spells': ['Strafe', 'Tar Bomb', 'Death Pact', 'Skeleton Walk']
+        'spells': ['Strafe', 'Tar Bomb', 'Death Pact', 'Skeleton Walk', {'shard': 'Burning Barrage', 'scepter': 'Burning Army'}]
     },
     'clockwerk': {
         'type': 'Universal',
         'mainInfo': 'LAUNCHES HIMSELF INTO ENEMIES WITH HIS HOOKSHOT',
         'attackType': 'Melee',
         'complexity': 2,
-        'spells': ['Battery Assault', 'Power Cogs', 'Rocket Flare', 'Hookshot']
+        'spells': ['Battery Assault', 'Power Cogs', 'Rocket Flare', 'Hookshot', {'shard': 'Jetpack', 'scepter': 'Overclocking'}]
     },
     'crystal maiden': {
         'type': 'Intelligence',
         'mainInfo': 'UNLEASHES A HIGH DAMAGE BLIZZARD UPON HER FOES',
         'attackType': 'Ranged',
         'complexity': 1,
-        'spells': ['Crystal Nova', 'Frostbite', 'Arcane Aura', 'Freezing Field']
+        'spells': ['Crystal Nova', 'Frostbite', 'Arcane Aura', 'Freezing Field', {'shard': 'Crystal Clone'}]
     },
     'dark seer': {
         'type': 'Universal',
         'mainInfo': "PULLS AND MANIPULATES HIS ENEMIES' POSITIONS",
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Vacuum', 'Ion Shell', 'Surge', 'Wall of Replica']
+        'spells': ['Vacuum', 'Ion Shell', 'Surge', 'Wall of Replica', {'scepter' : 'Normal Punch'}]
     },
     'dark willow': {
         'type': 'Universal',
@@ -198,14 +198,14 @@ const heroes = {
         'mainInfo': 'TRANSFORMS INTO A FORMIDABLE RANGED DRAGON',
         'attackType': 'Melee',
         'complexity': 1,
-        'spells': ['Breathe Fire', 'Dragon Tail', 'Dragon Blood', 'Elder Dragon Form']
+        'spells': ['Breathe Fire', 'Dragon Tail', 'Dragon Blood', 'Elder Dragon Form', {'shard': 'Fireball'}]
     },
     'drow ranger': {
         'type': 'Agility',
         'mainInfo': 'SLOWS WITH HER FROST-TIPPED ARROWS',
         'attackType': 'Ranged',
         'complexity': 1,
-        'spells': ['Frost Arrows', 'Gust', 'Multishot', 'Marksmanship']
+        'spells': ['Frost Arrows', 'Gust', 'Multishot', 'Marksmanship', {'shard': 'Glacier'}]
     },
     'unknown': {
         'message': 'data not available'
