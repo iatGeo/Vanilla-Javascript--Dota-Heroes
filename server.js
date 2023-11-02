@@ -130,6 +130,83 @@ const heroes = {
         'complexity': 2,
         'spells': ['Strafe', 'Tar Bomb', 'Death Pact', 'Skeleton Walk']
     },
+    'clockwerk': {
+        'type': 'Universal',
+        'mainInfo': 'LAUNCHES HIMSELF INTO ENEMIES WITH HIS HOOKSHOT',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Battery Assault', 'Power Cogs', 'Rocket Flare', 'Hookshot']
+    },
+    'crystal maiden': {
+        'type': 'Intelligence',
+        'mainInfo': 'UNLEASHES A HIGH DAMAGE BLIZZARD UPON HER FOES',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Crystal Nova', 'Frostbite', 'Arcane Aura', 'Freezing Field']
+    },
+    'dark seer': {
+        'type': 'Universal',
+        'mainInfo': "PULLS AND MANIPULATES HIS ENEMIES' POSITIONS",
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Vacuum', 'Ion Shell', 'Surge', 'Wall of Replica']
+    },
+    'dark willow': {
+        'type': 'Universal',
+        'mainInfo': 'HAS AN ARSENAL OF DISABLES AT HER DISPOSAL',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Bramble Maze', 'Shadow Realm', 'Cursed Crown', ['Bedlam', 'Terrorize']]
+    },
+    'dawnbreaker': {
+        'type': 'Strength',
+        'mainInfo': 'LEAPS TO AID HER ALLIES, WHEREVER THEY ARE ON THE MAP',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Starbreaker', 'Celestial Hammer', 'Luminosity', 'Solar Guardian']
+    },
+    'dazzle': {
+        'type': 'Universal',
+        'mainInfo': 'POWERFUL HEALER WHO CAN BRIEFLY PREVENT DEATH',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Poison Touch', 'Shallow Grave', 'Shadow Wave', 'Bad Juju']
+    },
+    'death prophet': {
+        'type': 'Intelligence',
+        'mainInfo': 'SUMMONS AN ARMY OF GHOSTS TO ATTACK',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Crypt Swarm', 'Silence', 'Spirit Siphon', 'Exorcism']
+    },
+    'disruptor': {
+        'type': 'Intelligence',
+        'mainInfo': 'TRAPS AND SILENCES FOES IN HIS STATIC STORM',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Thunder Strike', 'Glimpse', 'Kinetic Field', 'Static Storm']
+    },
+    'doom': {
+        'type': 'Strength',
+        'mainInfo': 'CAN PREVENT SINGLE OR MULTIPLE ENEMIES FROM USING ABILTIES AND ITEMS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Devour', 'Scorched Earth', 'Infernal Blade', 'Doom']
+    },
+    'dragon knight': {
+        'type': 'Strength',
+        'mainInfo': 'TRANSFORMS INTO A FORMIDABLE RANGED DRAGON',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Breathe Fire', 'Dragon Tail', 'Dragon Blood', 'Elder Dragon Form']
+    },
+    'drow ranger': {
+        'type': 'Agility',
+        'mainInfo': 'SLOWS WITH HER FROST-TIPPED ARROWS',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Frost Arrows', 'Gust', 'Multishot', 'Marksmanship']
+    },
     'unknown': {
         'message': 'data not available'
     }
