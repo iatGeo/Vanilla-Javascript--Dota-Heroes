@@ -487,6 +487,34 @@ const heroes = {
         'complexity': 2,
         'spells': ['Impale', 'Mind Flare', 'Spiked Carapace', 'Vendetta', {'scepter': 'Burrow'}]
     },
+    'ogre magi': {
+        'type': 'Strength',
+        'mainInfo': 'USES A TOUCH OF LUCK TO AMPLIFY HIS SKILLS',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Fireblast', 'Ignite', 'Bloodlust', 'Dumb Luck', 'Multicast', {'shard': 'Fire Shield', 'scepter': 'Unrefined Fireblast'}]
+    },
+    'omniknight': {
+        'type': 'Strength',
+        'mainInfo': 'TANKY FRONTLINER WHO PROTECTS AND HEALS HIS ALLIES',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Purification', 'Repel', 'Hammer of Purity', 'Guardian Angel']
+    },
+    'oracle': {
+        'type': 'Intelligence',
+        'mainInfo': 'ALTERS THE FATES OF HEROES WITH HIS BUFFS AND NUKES',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ["Fortune's End", "Fate's Edict", 'Purifying Flames', 'False Promise', {'shard': 'Rain of Destiny'}]
+    },
+    'outworld destroyer': {
+        'type': 'Intelligence',
+        'mainInfo': 'CAN IMPRISON A HERO, MAKING THEM INVULNERABLE',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Arcane Orb', 'Astral Imprisonment', 'Essence Flux', "Sanity's Eclipse"]
+    },
     'unknown': {
         'message': 'data not available'
     }
