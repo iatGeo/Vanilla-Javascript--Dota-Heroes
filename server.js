@@ -459,18 +459,46 @@ const heroes = {
         'complexity': 2,
         'spells': ['Mirror Image', 'Ensnare', 'Rip Tide', 'Song of the Siren', {'scepter': 'Reel In'}]
     },
+    "nature's prophet": {
+        'type': 'Intelligence',
+        'mainInfo': 'ABLE TO TELEPORT TO ANY LOCATION ON THE MAP AT WILL',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Sprout', 'Teleportation', "Nature's Call", 'Wrath of Nature', {'shard': 'Curse of the Oldgrowth'}]
+    },
+    'necrophos': {
+        'type': 'Intelligence',
+        'mainInfo': 'DAMAGES ENEMIES AND HEALS ALLIES SIMULTANEOUSLY',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Death Pulse', 'Ghost Shroud', 'Heartstopper Aura', "Reaper's Scythe", {'shard': 'Death Seeker'}]
+    },
+    'night stalker': {
+        'type': 'Strength',
+        'mainInfo': 'ENPOWERED BY THE SHADOWS OF NIGHTFALL',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Void', 'Crippling Fear', 'Hunter in the Night', 'Dark Ascension']
+    },
+    'nyx assassin': {
+        'type': 'Universal',
+        'mainInfo': 'REFLECTS ENEMY DAMAGE AND STUNS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Impale', 'Mind Flare', 'Spiked Carapace', 'Vendetta', {'scepter': 'Burrow'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
 }
 
-'name': {
-    'type': ,
-    'mainInfo': ,
-    'attackType': ,
-    'complexity': ,
-    'spells': []
-},
+// 'name': {
+//     'type': ,
+//     'mainInfo': ,
+//     'attackType': ,
+//     'complexity': ,
+//     'spells': []
+// },
 
 
 app.get('/', (req,res) => {
