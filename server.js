@@ -326,18 +326,151 @@ const heroes = {
         'complexity': 2,
         'spells': ['Torrent', 'Tidebringer', 'X Marks the Spot', 'Ghostship', {'shard': 'Tidal Wave', 'scepter': 'Torrent Storm'}]
     },
+    'legion commander': {
+        'type': 'Strength',
+        'mainInfo': 'INCREASES POWER WITH EACH DUEL VICTORY',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Overwhelming Odds', 'Press the Attack', 'Moment of Courage', 'Duel']
+    },
+    'leshrac': {
+        'type': 'Intelligence',
+        'mainInfo': 'CAN DEAL HEAVY DAMAGE IN AN AURA AROUND HIMSELF',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Split Earth', 'Diabolic Edict', 'Lighting Storm', 'Pulse Nova', {'scepter': 'Nihilism'}]
+    },
+    'lich': {
+        'type': 'Intelligence',
+        'mainInfo': 'UNLEASHES A POWERFUL ATTACK THAT BOUNCES BETWEEN ENEMIES',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Frost Blast', 'Frost Shield', 'Sinister Gaze', 'Chain Frost', {'shard': 'Ice Spire'}]
+    },
+    'lifestealer': {
+        'type': 'Strength',
+        'mainInfo': 'INFESTS OTHER UNITS FOR MOBILITY AND STRENGTH',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Rage', 'Feast', 'Ghoul Frenzy', 'Infest', {'shard': 'Open Wounds'}]
+    },
+    'lina': {
+        'type': 'Intelligence',
+        'mainInfo': 'INCREASES ATTACK AND SPEED WITH EVERY SPELL',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Dragon Slave', 'Light Strike Array', 'Fiery Soul', 'Laguna Blade', {'scepter': 'Flame Cloak'}]
+    },
+    'lion': {
+        'type': 'Intelligence',
+        'mainInfo': 'STEALS ENEMY MANA TO FUEL HIS OWN ABILITIES',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Earth Spike', 'Hex', 'Mana Drain', 'Finger of Death']
+    },
+    'lone druid': {
+        'type': 'Universal',
+        'mainInfo': 'COMMANDS A POWERFUL SPIRIT BEAR IN BATTLE',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Summon Spirit Bear', 'Spirit Link', 'Savage Roar', 'True Form']
+    },
+    'luna': {
+        'type': 'Agility',
+        'mainInfo': 'TEARS INTO HER ENEMIES WITH BOUNCING ATTACKS',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Lucent Beam', 'Moon Glaives', 'Lunar Blessing', 'Eclipse']
+    },
+    'lycan': {
+        'type': 'Universal',
+        'mainInfo': 'SHAPESHIFTS INTO A FEROCIOUS BEAST',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Summon Wolves', 'Howl', 'Feral Impulse', 'Shapeshift', {'scepter': 'Wolf Bite'}]
+    },
+    'magnus': {
+        'type': 'Universal',
+        'mainInfo': 'CHARGES IN TO REPOSITION HIS ENEMIES',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Shockwave', 'Empower', 'Skewer', 'Reverse Polarity', {'scepter': 'Horn Toss'}]
+    },
+    'marci': {
+        'type': 'Universal',
+        'mainInfo': 'DASHES AROUND PUMMELING ENEMIES WITH RAPID ATTACKS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Dispose', 'Rebound', 'Sidekick', 'Unleash']
+    },
+    'mars': {
+        'type': 'Strength',
+        'mainInfo': 'TRAPS HIS FOES IN AN INESCAPABLE ARENA',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Spear of Mars', "God's Rebuke", 'Bulwark', 'Arena of Blood']
+    },
+    'medusa': {
+        'type': 'Agility',
+        'mainInfo': 'IMMOBILIZES HER ENEMIES WITH HER STONE GAZE',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Split Shot', 'Mystic Snake', 'Mana Shiel', 'Stone Gaze', {'scepter': 'Cold Blooded'}]
+    },
+    'meepo': {
+        'type': 'Agility',
+        'mainInfo': 'FIVE ARE STRONGER THAN ONE',
+        'attackType': 'Melee',
+        'complexity': 3,
+        'spells': ['Earthbind', 'Poof', 'Ransack', 'Divided We Stand', {'shard': 'Dig', 'scepter': 'Megameepo'}]
+    },
+    'mirana': {
+        'type': 'Universal',
+        'mainInfo': 'STUNS ENEMIES WITH PRECISE ARROWS FROM AFAR',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Starstorm', 'Sacred Arrow', 'Leap', 'Moonlight Shadow']
+    },
+    'monkey king': {
+        'type': 'Agility',
+        'mainInfo': 'SPRINGS FROM THE COVER OF THE TREE TOPS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Boundless Strike', 'Tree Dance', 'Jingu Mastery', "Wukong's Command"]
+    },
+    'morphling': {
+        'type': 'Agility',
+        'mainInfo': 'RIDES THE WAVES TO FLANK ENEMIES',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Waveform', ['Adaptive Strike (Agility)', 'Adaptive Strike (Strength)'], ['Attribute Shift (Agility Gain)', 'Attribute Shift (Strength Gain)'], 'Morph']
+    },
+    'muerta': {
+        'type': 'Intelligence',
+        'mainInfo': 'BLASTS FEARSOME TRICKSHOTS AND UNLEASHES ETHEREAL RUIN',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Dead Shot', 'The Calling', 'Gunslinger', 'Pierce the Veil', {'scepter': 'Parting Shot'}]
+    },
+    'naga siren': {
+        'type': 'Agility',
+        'mainInfo': 'ABLE TO CAPITIVATE AND DISABLE ENEMIES WITH HER SONG',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Mirror Image', 'Ensnare', 'Rip Tide', 'Song of the Siren', {'scepter': 'Reel In'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
 }
 
-// 'name': {
-//     'type': ,
-//     'mainInfo': ,
-//     'attackType': ,
-//     'complexity': ,
-//     'spells': []
-// },
+'name': {
+    'type': ,
+    'mainInfo': ,
+    'attackType': ,
+    'complexity': ,
+    'spells': []
+},
 
 
 app.get('/', (req,res) => {
