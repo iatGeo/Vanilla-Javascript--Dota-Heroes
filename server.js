@@ -515,6 +515,69 @@ const heroes = {
         'complexity': 2,
         'spells': ['Arcane Orb', 'Astral Imprisonment', 'Essence Flux', "Sanity's Eclipse"]
     },
+    'pangolier': {
+        'type': 'Universal',
+        'mainInfo': 'DASHES AND ROLLS IN TO DISRUPT ENEMY MOVEMENTS',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Swashbuckle', 'Shield Crash', 'Lucky Shot', 'Rolling Thunder', {'shard': 'Roll Up'}]
+    },
+    'phantom assassin': {
+        'type': 'Agility',
+        'mainInfo': 'BLINKS ONTO HER FOES WITH CRITICAL STRIKES',
+        'attackType': 'Melee',
+        'complexity': '1',
+        'spells': ['Stifling Dagger', 'Phantom Strike', 'Blur', 'Coup de Grace', {'shard': 'Fan of Knives'}]
+    },
+    'phantom lancer': {
+        'type': 'Agility',
+        'mainInfo': 'CREATES ILLUSIONS OF HIMSELF TO TRICK OR ATTACK FOES',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Spirit Lance', 'Doppelganger', 'Phantom Rush', 'Juxtapose']
+    },
+    'phoenix': {
+        'type': 'Universal',
+        'mainInfo': 'HEALS AND DAMAGES AT THE SACRIFICE OF ITS OWN HEALTH',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Icarus Dive', 'Fire Spirits', 'Sun Ray', 'Supernova']
+    },
+    'primal beast': {
+        'type': 'Strength',
+        'mainInfo': 'STOMPS OVER EVERYTHING AND SMASHES ENEMIES INTO MESSY BITS',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Onslaught', 'Trample', 'Uproar', 'Pulverize', {'shard': 'Rock Throw'}]
+    },
+    'puck': {
+        'type': 'Intelligence',
+        'mainInfo': 'ORBS TO ENEMIES AND SILENCES THEM',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Illusory Orb', 'Waning Rift', 'Phase Shift', 'Dream Coil']
+    },
+    'pudge': {
+        'type': 'Strength',
+        'mainInfo': 'HOOKS AND PULLS ENEMIES TOWARDS HIM',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Meat Hook', 'Rot', 'Flesh Heap', 'Dismember']
+    },
+    'pugna': {
+        'type': 'Intelligence',
+        'mainInfo': 'DRAINS ENEMY LIFE TO HEAL HIMSELF',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Nether Blast', 'Decrepify', 'Nether Ward', 'Life Drain']
+    },
+    'queen of pain': {
+        'type': 'Intelligence',
+        'mainInfo': 'BLINKS IN TO DEAL MASSIVE MAGICAL DAMAGE',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Shadow Strike', 'Blink', 'Scream of Pain', 'Sonic Wave']
+    },
     'unknown': {
         'message': 'data not available'
     }
