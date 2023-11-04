@@ -578,18 +578,39 @@ const heroes = {
         'complexity': 2,
         'spells': ['Shadow Strike', 'Blink', 'Scream of Pain', 'Sonic Wave']
     },
+    'razor': {
+        'type': 'Agility',
+        'mainInfo': 'STEALS ENEMY DAMAGE TO ADD TO HIS OWN',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Plasma Field', 'Static Link', 'Storm Surge', 'Eye of the Storm']
+    },
+    'riki': {
+        'type': 'Agility',
+        'mainInfo': 'REMAINS PERMANENTLY INVISIBLE UNTIL THE MOMENT TO STRIKE',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Smoke Screen', 'Blink Strike', 'Tricks of the Trade', 'Cloak and Dagger']
+    },
+    'rubick': {
+        'type': 'Intelligence',
+        'mainInfo': 'STEALS THE SPELLS OF HIS ENEMIES TO USE AGAINST THEM',
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Telekinesis', 'Fade Bolt', 'Arcane Supremacy', 'Spell Steal']
+    },
     'unknown': {
         'message': 'data not available'
     }
 }
 
-// 'name': {
-//     'type': ,
-//     'mainInfo': ,
-//     'attackType': ,
-//     'complexity': ,
-//     'spells': []
-// },
+'name': {
+    'type': ,
+    'mainInfo': ,
+    'attackType': ,
+    'complexity': ,
+    'spells': []
+},
 
 
 app.get('/', (req,res) => {
