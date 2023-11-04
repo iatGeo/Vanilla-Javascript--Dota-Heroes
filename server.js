@@ -599,6 +599,41 @@ const heroes = {
         'complexity': 3,
         'spells': ['Telekinesis', 'Fade Bolt', 'Arcane Supremacy', 'Spell Steal']
     },
+    'sand king': {
+        'type': 'Universal',
+        'mainInfo': 'BURROWS TO STUN AND SLOW ENEMIES',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Burrowstrike', 'Sand Storm', 'Caustic Finale', 'Epicenter']
+    },
+    'shadow demon': {
+        'type': 'Intelligence',
+        'mainInfo': 'STACKS EXPONENTIAL POISON DAMAGE AGAINST HIS FOES',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Disruption', 'Disseminate', 'Shadow Poison', 'Demonic Purge', {'shard': 'Demonic Cleanse'}]
+    },
+    'shadow fiend': {
+        'type': 'Agility',
+        'mainInfo': 'UNLEASHES THE SOULS OF FALLEN ENEMIES FOR DAMAGE',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Shadowraze', 'Necromastery', 'Presence of the Dark Lord', 'Requiem of Souls']
+    },
+    'shadow shaman': {
+        'type': 'Intelligence',
+        'mainInfo': 'SUMMONS POWERFUL SERPENT WARDS TO DEAL DAMAGE',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Ether Shock', 'Hex', 'Shackles', 'Mass Serpent Ward']
+    },
+    'silencer': {
+        'type': 'Intelligence',
+        'mainInfo': 'CAN SILENCE ALL ENEMIES ON THE MAP',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Arcance Curse', 'Glaives of Wisdom', 'Last Word', 'Global Silence']
+    },
     'unknown': {
         'message': 'data not available'
     }
