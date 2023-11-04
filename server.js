@@ -697,18 +697,39 @@ const heroes = {
         'complexity': 1,
         'spells': ['Charge of Darkness', 'Bulldoze', 'Greater Bash', 'Nether Strike', {'shard': 'Planar Pocket'}]
     },
+    'techies': {
+        'type': 'Universal',
+        'mainInfo': 'SURPRISES ENEMIES WITH INVISIBLE LANDMINES AND EXPLOSIVE ATTACKS',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Sticky Bomb', 'Reactive Tazer', 'Blast Off!', 'Proximity Mines', {'scepter': 'Minefield Sign'}]
+    },
+    'templar assassin': {
+        'type': 'Agility',
+        'mainInfo': 'SLOWS DOWN ENEMIES WITH TRAPS',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Refraction', 'Meld', 'Psi Blades', 'Psionic Trap', {'scepter': 'Psionic Projection'}]
+    },
+    'terrorblade': {
+        'type': 'Agility',
+        'mainInfo': 'TRANSFORMS INTO A POWERFUL RANGED DEMON',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Reflection', 'Conjure Image', 'Metamorphosis', 'Sunder', {'shard': 'Demon Zeal', 'scepter': 'Terror Wave'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
 }
 
-'name': {
-    'type': ,
-    'mainInfo': ,
-    'attackType': ,
-    'complexity': ,
-    'spells': []
-},
+// 'name': {
+//     'type': ,
+//     'mainInfo': ,
+//     'attackType': ,
+//     'complexity': ,
+//     'spells': []
+// },
 
 
 app.get('/', (req,res) => {
