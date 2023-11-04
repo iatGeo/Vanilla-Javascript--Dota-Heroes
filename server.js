@@ -634,6 +634,69 @@ const heroes = {
         'complexity': 2,
         'spells': ['Arcance Curse', 'Glaives of Wisdom', 'Last Word', 'Global Silence']
     },
+    'skywrath mage': {
+        'type': 'Intelligence',
+        'mainInfo': 'CASTS HIGH DAMAGE MAGICAL SPELLS ON A SINGLE TARGET',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Arcane Bolt', 'Concussive Shot', 'Ancient Seal', 'Mystic Flare', {'shard': 'Shield of the Scion'}]
+    },
+    'slardar': {
+        'type': 'Strength',
+        'mainInfo': 'CHASES DOWN HIS ENEMIES TO WEAKEN AND BASH THEM',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Guardian Sprint', 'Slithereen Crush', 'Bash of the Deep', 'Corrosive Haze']
+    },
+    'slark': {
+        'type': 'Agility',
+        'mainInfo': 'SLIPS IN AND OUT OF SKIRMISHES',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Dark Pact', 'Pounce', 'Essence Shift', 'Shadow Dance', {'shard': 'Depth Shroud'}]
+    },
+    'snapfire': {
+        'type': 'Universal',
+        'mainInfo': 'MOWS DOWN HER ENEMIES WITH HEAVY ARTILLERY AND TRUSTY LIZARD',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Scatterblast', 'Firesnap Cookie', "Lil' Shredder", 'Mortimer Kisses', {'scepter': 'Gobble Up'}]
+    },
+    'sniper': {
+        'type': 'Agility',
+        'mainInfo': 'PICKS OFF HIS ENEMIES FROM AFAR',
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Shrapnel', 'Headshot', 'Take Aim', 'Assassinate', {'shard': 'Concussive Grenade'}]
+    },
+    'spectre': {
+        'type': 'Agility',
+        'mainInfo': 'HAUNTS HER ENEMIES AND TELEPORTS TO HER TARGET',
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Spectral Dagger', 'Desolate', 'Dispersion', 'Shadow Step', {'scepter': 'Haunt'}]
+    },
+    'storm spirit': {
+        'type': 'Intelligence',
+        'mainInfo': 'ZIPS ACROSS THE MAP TO ENGAGE IN FIGHTS',
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Static Remnant', 'Electric Vortex', 'Overload', 'Ball Lightning']
+    },
+    'sven': {
+        'type': 'Strength',
+        'mainInfo': 'CLEAVES DOWN ENEMIES WITH HIS INCREDIBLE STRENGTH',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Storm Hammer', 'Great Cleave', 'Warcry', "God's Strength"]
+    },
+    'spirit breaker': {
+        'type': 'Strength',
+        'mainInfo': 'CHARGES DOWN ENEMIES FROM ANYWHERE ON THE MAP',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Charge of Darkness', 'Bulldoze', 'Greater Bash', 'Nether Strike', {'shard': 'Planar Pocket'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
