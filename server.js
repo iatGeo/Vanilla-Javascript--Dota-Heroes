@@ -718,6 +718,55 @@ const heroes = {
         'complexity': 2,
         'spells': ['Reflection', 'Conjure Image', 'Metamorphosis', 'Sunder', {'shard': 'Demon Zeal', 'scepter': 'Terror Wave'}]
     },
+    'tidehunter': {
+        'type': 'Strength',
+        'mainInfo': "DURABLE HERO WHO SHRUGS OFF ENEMY DAMAGE",
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Gush', 'Kraken Shell', 'Anchor Smash', 'Ravage', {'shard': 'Dead in the Water'}]
+    },
+    'timbersaw': {
+        'type': 'Universal',
+        'mainInfo': "CHOPS THROUGH THE FOREST TO FACE HIS FOES",
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Whirling Death', 'Timber Chain', 'Reactive Armor', 'Chakram', {'shard': 'Flamethrower'}]
+    },
+    'tinker': {
+        'type': 'Intelligence',
+        'mainInfo': "DEMOLISHES HIS ENEMIES WITH SWARMS OF MACHINES",
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Laser', 'Heat-Seeking Missile', 'Defense Matrix', 'Keen Conveyance', 'Rearm', {'shard': 'Warp Flare'}]
+    },
+    'tiny': {
+        'type': 'Strength',
+        'mainInfo': "GROWS IN SIZE AND STRENGTH AS BATTLE ENSUES",
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Avalanche', 'Toss', 'Tree Grab', 'Grow', {'scepter': 'Tree Volley'}]
+    },
+    'treant protector': {
+        'type': 'Strength',
+        'mainInfo': "CALLS UPON THE FOREST TO ROOT HIS FOES",
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ["Nature's Grasp", 'Leech Seed', 'Living Armor', "Nature's Guise", 'Overgrowth', {'scepter': 'Eyes in the Forest'}]
+    },
+    'troll warlord': {
+        'type': 'Agility',
+        'mainInfo': "SWAPS BETWEEN RANGED AND MELEE ATTACKS AT WILL",
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ["Berserker's Rage", ['Whirling Axes (Ranged)', 'Whirling Axes (Melee)'], 'Fervor', 'Battle Trance']
+    },
+    'tusk': {
+        'type': 'Strength',
+        'mainInfo': "SNOWBALLS INTO HIS ENEMIES TO STUN",
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Ice Shards', 'Snowball', 'Tag Team', 'Walrus Punch!', {'scepter': 'Walrus Kick'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
