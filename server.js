@@ -809,6 +809,34 @@ const heroes = {
         'complexity': 1,
         'spells': ['Poison Attack', 'Nethertoxin', 'Corrosive Skin', 'Viper Strike', {'scepter': 'Nosedive'}]
     },
+    'visage': {
+        'type': 'Universal',
+        'mainInfo': "SCOUTS AND ATTACKS WITH HIS FAMILIARS",
+        'attackType': 'Ranged',
+        'complexity': 3,
+        'spells': ['Grave Chill', 'Soul Assumption', "Gravekeeper's Cloak", 'Summon Familiars', {'scepter': 'Silent as the Grave'}]
+    },
+    'void spirit': {
+        'type': 'Universal',
+        'mainInfo': "STEPS IN AND OUT OF THE MORTAL PLANE TO STRIKE HIS FOES",
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Aether Remnant', 'Dissimilate', 'Resonant Pulse', 'Astral Step']
+    },
+    'warlock': {
+        'type': 'Intelligence',
+        'mainInfo': "SUMMONS POWERFUL DEMONS TO FIGHT AT HIS SIDE",
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Fatal Bonds', 'Shadow Word', 'Upheaval', 'Chaotic Offering']
+    },
+    'weaver': {
+        'type': 'Agility',
+        'mainInfo': "REWINDS TIME TO REVERSE DAMAGE AND POSITION",
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['The Swarm', 'Shukuchi', 'Geminate Attack', 'Time Lapse']
+    },
     'unknown': {
         'message': 'data not available'
     }
