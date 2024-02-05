@@ -837,18 +837,45 @@ const heroes = {
         'complexity': 2,
         'spells': ['The Swarm', 'Shukuchi', 'Geminate Attack', 'Time Lapse']
     },
+    'windranger': {
+        'type': 'Universal',
+        'mainInfo': "FIRES SWIFT FLURRY OF ARROWS AT A SINGLE TARGET",
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Shackleshot', 'Powershot', 'Windrun', 'Focus Fire', {'shard': 'Gale Force'}]
+    },
+    'winter wyvern': {
+        'type': 'Universal',
+        'mainInfo': "ABLE TO FORCE HER ENEMIES TO ATTACK THEIR OWN ALLY",
+        'attackType': 'Ranged',
+        'complexity': 2,
+        'spells': ['Arctic Burn', 'Splinter Blast', 'Cold Embrace', "Winter's Curse"]
+    },
+    'witch doctor': {
+        'type': 'Intelligence',
+        'mainInfo': "CHANNELS A HIGH DAMAGE DEATH WARD",
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Paralyzing Cask', 'Voodoo Restoration', 'Maledict', 'Death Ward', {'shard': 'Voodoo Switcheroo'}]
+    },
+    'wraith king': {
+        'type': 'Strength',
+        'mainInfo': "CAN REINCARNATE INSTANTLY UPON DEATH",
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Wraithfire Blast', 'Vampiric Spirit', 'Mortal Strike', 'Reincarnation']
+    },
+    'zeus': {
+        'type': 'Intelligence',
+        'mainInfo': "STRIKES ENEMIES NEAR AND FAR WITH LIGHTNING",
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Arc Lighting', 'Lighting Bolt', 'Heavenly Jump', "Thundergod's Wrath", {'shard': 'Lighting Hands', 'scepter': 'Nimbus'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
 }
-
-// 'name': {
-//     'type': ,
-//     'mainInfo': ,
-//     'attackType': ,
-//     'complexity': ,
-//     'spells': []
-// },
 
 
 app.get('/', (req,res) => {
