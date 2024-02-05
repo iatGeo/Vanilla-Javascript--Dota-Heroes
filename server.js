@@ -767,6 +767,48 @@ const heroes = {
         'complexity': 1,
         'spells': ['Ice Shards', 'Snowball', 'Tag Team', 'Walrus Punch!', {'scepter': 'Walrus Kick'}]
     },
+    'underlord': {
+        'type': 'Strength',
+        'mainInfo': "TELEPORTS HIS TEAM IN AND OUT OF BATTLE",
+        'attackType': 'Melee',
+        'complexity': 2,
+        'spells': ['Firestorm', 'Pit of Malice', 'Atrophy Aura', "Fiend's Gate"]
+    },
+    'undying': {
+        'type': 'Strength',
+        'mainInfo': "SUMMONS HORDES OF ZOMBIES TO ATTACK HIS FOES",
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Decay', 'Soul Rip', 'Tombstone', 'Flesh Golem']
+    },
+    'ursa': {
+        'type': 'Agility',
+        'mainInfo': "DEALS MORE DAMAGE WITH EVERY HIT TO THE SAME FOE",
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Earthshock', 'Overpower', 'Fury Swipes', 'Enrage']
+    },
+    'vengeful spirit': {
+        'type': 'Universal',
+        'mainInfo': "CAN SWAP HERSELF WITH ANY NEARBY HERO",
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Magic Missile', 'Wave of Terror', 'Vengeance Aura', 'Nether Swap']
+    },
+    'venomancer': {
+        'type': 'Universal',
+        'mainInfo': "DEALS DAMAGE OVER TIME WITH VENOMOUS ATTACKS",
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Venomous Gale', 'Poison Sting', 'Plague Ward', 'Noxious Plague', {'shard': 'Latent Toxicity', 'scepter': 'Poison Nova'}]
+    },
+    'viper': {
+        'type': 'Agility',
+        'mainInfo': "POISONOUS TOXINS CHIP AWAY ARMOR AND SLOW ENEMIES",
+        'attackType': 'Ranged',
+        'complexity': 1,
+        'spells': ['Poison Attack', 'Nethertoxin', 'Corrosive Skin', 'Viper Strike', {'scepter': 'Nosedive'}]
+    },
     'unknown': {
         'message': 'data not available'
     }
