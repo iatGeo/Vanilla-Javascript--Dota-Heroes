@@ -13,7 +13,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Acid Spray', 'Unstable Concoction', 'Corrosive Weaponry', 'Chemical Rage', {'shard': 'Berserk Potion'}]
     },
-    'ancient apparition': {
+    'ancient_apparition': {
         'type': 'Intelligence',
         'mainInfo': `LAUNCHES A POWERFUL ICY BLAST FROM ANYWHERE ON THE MAP`,
         'attackType': 'Ranged',
@@ -27,7 +27,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Mana Break', 'Blink', 'Counterspell', 'Mana Void', {'shard': 'Counterspell Ally', 'scepter': 'Blink Fragment'}]
     },
-    'arc warden': {
+    'arc_warden': {
         'type': 'Agility',
         'mainInfo': `CREATES A COPY OF HIMSELF TO SPLIT PUSH`,
         'attackType': 'Ranged',
@@ -69,7 +69,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Bloodrage', 'Blood Rite', 'Thirst', 'Rupture', {'scepter': 'Blood Mist'}]
     },
-    'bounty hunter': {
+    'bounty_hunter': {
         'type': 'Agility',
         'mainInfo': `LOOTS AND COLLECTS BOUNTIES OFF OF HIS ENEMIES`,
         'attackType': 'Melee',
@@ -97,14 +97,14 @@ const heroes = {
         'complexity': 2,
         'spells': ['Insatiable Hunger', 'Spin Web', 'Silken Bola', 'Spawn Spiderlings', {'scepter': "Spinner's Snare"}]
     },
-    'centaur warrunner': {
+    'centaur_warrunner': {
         'type': 'Strength',
         'mainInfo': 'REFLECTS DAMAGE BACK TO HIS ATTACKERS',
         'attackType': 'Melee',
         'complexity': 1,
         'spells': ['Hoof Stomp', 'Double Edge', 'Retaliate', 'Stampede', {'scepter': 'Hitch a Ride'}]
     },
-    'chaos knight': {
+    'chaos_knight': {
         'type': 'Strength',
         'mainInfo': 'HAS STRONG BUT RANDOM DAMAGE OUTPUT',
         'attackType': 'Melee',
@@ -132,21 +132,21 @@ const heroes = {
         'complexity': 2,
         'spells': ['Battery Assault', 'Power Cogs', 'Rocket Flare', 'Hookshot', {'shard': 'Jetpack', 'scepter': 'Overclocking'}]
     },
-    'crystal maiden': {
+    'crystal_maiden': {
         'type': 'Intelligence',
         'mainInfo': 'UNLEASHES A HIGH DAMAGE BLIZZARD UPON HER FOES',
         'attackType': 'Ranged',
         'complexity': 1,
         'spells': ['Crystal Nova', 'Frostbite', 'Arcane Aura', 'Freezing Field', {'shard': 'Crystal Clone'}]
     },
-    'dark seer': {
+    'dark_seer': {
         'type': 'Universal',
         'mainInfo': "PULLS AND MANIPULATES HIS ENEMIES' POSITIONS",
         'attackType': 'Melee',
         'complexity': 1,
         'spells': ['Vacuum', 'Ion Shell', 'Surge', 'Wall of Replica', {'scepter' : 'Normal Punch'}]
     },
-    'dark willow': {
+    'dark_willow': {
         'type': 'Universal',
         'mainInfo': 'HAS AN ARSENAL OF DISABLES AT HER DISPOSAL',
         'attackType': 'Ranged',
@@ -167,7 +167,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Poison Touch', 'Shallow Grave', 'Shadow Wave', 'Bad Juju']
     },
-    'death prophet': {
+    'death_prophet': {
         'type': 'Intelligence',
         'mainInfo': 'SUMMONS AN ARMY OF GHOSTS TO ATTACK',
         'attackType': 'Ranged',
@@ -188,21 +188,21 @@ const heroes = {
         'complexity': 2,
         'spells': ['Devour', 'Scorched Earth', 'Infernal Blade', 'Doom']
     },
-    'dragon knight': {
+    'dragon_knight': {
         'type': 'Strength',
         'mainInfo': 'TRANSFORMS INTO A FORMIDABLE RANGED DRAGON',
         'attackType': 'Melee',
         'complexity': 1,
         'spells': ['Breathe Fire', 'Dragon Tail', 'Dragon Blood', 'Elder Dragon Form', {'shard': 'Fireball'}]
     },
-    'drow ranger': {
+    'drow_ranger': {
         'type': 'Agility',
         'mainInfo': 'SLOWS WITH HER FROST-TIPPED ARROWS',
         'attackType': 'Ranged',
         'complexity': 1,
         'spells': ['Frost Arrows', 'Gust', 'Multishot', 'Marksmanship', {'shard': 'Glacier'}]
     },
-    'earth spirit': {
+    'earth_spirit': {
         'type': 'Strength',
         'mainInfo': 'DISABLES AND REPOSITIONS HIS ENEMIES',
         'attackType': 'Melee',
@@ -216,14 +216,14 @@ const heroes = {
         'complexity': 2,
         'spells': ['Fissure', 'Enchant Totem', 'Aftershock', 'Echo Slam']
     },
-    'elder titan': {
+    'elder_titan': {
         'type': 'Strength',
         'mainInfo': 'DAMAGES AND DISABLES WITH HIS ASTRAL SPIRIT',
         'attackType': 'Melee',
         'complexity': 2,
         'spells': ['Echo Stomp', 'Astral Spirit', 'Natural Order', 'Earth Splitter']
     },
-    'ember spirit': {
+    'ember_spirit': {
         'type': 'Agility',
         'mainInfo': 'RAPIDLY STRIKES AND CHAINS HIS FOES',
         'attackType': 'Melee',
@@ -244,7 +244,7 @@ const heroes = {
         'complexity': '2',
         'spells': ['Malefice', 'Demonic Summoning', 'Midnight Pulse', 'Black Hole']
     },
-    'faceless void': {
+    'faceless_void': {
         'type': 'Agility',
         'mainInfo': 'CAN FREEZE HIS ENEMIES IN TIME',
         'attackType': 'Melee',
@@ -307,7 +307,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Blade Fury', 'Healing Ward', 'Blade Dance', 'Omnislash', {'scepter': 'Swiftslash'}]
     },
-    'keeper of the light': {
+    'keeper_of_the_light': {
         'type': 'Intelligence',
         'mainInfo': 'PROVIDES INSTANT MANA TO ALLIES',
         'attackType': 'Ranged',
@@ -321,7 +321,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Torrent', 'Tidebringer', 'X Marks the Spot', 'Ghostship', {'shard': 'Tidal Wave', 'scepter': 'Torrent Storm'}]
     },
-    'legion commander': {
+    'legion_commander': {
         'type': 'Strength',
         'mainInfo': 'INCREASES POWER WITH EACH DUEL VICTORY',
         'attackType': 'Melee',
@@ -363,7 +363,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Earth Spike', 'Hex', 'Mana Drain', 'Finger of Death']
     },
-    'lone druid': {
+    'lone_druid': {
         'type': 'Universal',
         'mainInfo': 'COMMANDS A POWERFUL SPIRIT BEAR IN BATTLE',
         'attackType': 'Ranged',
@@ -426,7 +426,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Starstorm', 'Sacred Arrow', 'Leap', 'Moonlight Shadow']
     },
-    'monkey king': {
+    'monkey_king': {
         'type': 'Agility',
         'mainInfo': 'SPRINGS FROM THE COVER OF THE TREE TOPS',
         'attackType': 'Melee',
@@ -447,14 +447,14 @@ const heroes = {
         'complexity': 1,
         'spells': ['Dead Shot', 'The Calling', 'Gunslinger', 'Pierce the Veil', {'scepter': 'Parting Shot'}]
     },
-    'naga siren': {
+    'naga_siren': {
         'type': 'Agility',
         'mainInfo': 'ABLE TO CAPITIVATE AND DISABLE ENEMIES WITH HER SONG',
         'attackType': 'Melee',
         'complexity': 2,
         'spells': ['Mirror Image', 'Ensnare', 'Rip Tide', 'Song of the Siren', {'scepter': 'Reel In'}]
     },
-    "nature's prophet": {
+    "nature's_prophet": {
         'type': 'Intelligence',
         'mainInfo': 'ABLE TO TELEPORT TO ANY LOCATION ON THE MAP AT WILL',
         'attackType': 'Ranged',
@@ -468,21 +468,21 @@ const heroes = {
         'complexity': 1,
         'spells': ['Death Pulse', 'Ghost Shroud', 'Heartstopper Aura', "Reaper's Scythe", {'shard': 'Death Seeker'}]
     },
-    'night stalker': {
+    'night_stalker': {
         'type': 'Strength',
         'mainInfo': 'ENPOWERED BY THE SHADOWS OF NIGHTFALL',
         'attackType': 'Melee',
         'complexity': 1,
         'spells': ['Void', 'Crippling Fear', 'Hunter in the Night', 'Dark Ascension']
     },
-    'nyx assassin': {
+    'nyx_assassin': {
         'type': 'Universal',
         'mainInfo': 'REFLECTS ENEMY DAMAGE AND STUNS',
         'attackType': 'Melee',
         'complexity': 2,
         'spells': ['Impale', 'Mind Flare', 'Spiked Carapace', 'Vendetta', {'scepter': 'Burrow'}]
     },
-    'ogre magi': {
+    'ogre_magi': {
         'type': 'Strength',
         'mainInfo': 'USES A TOUCH OF LUCK TO AMPLIFY HIS SKILLS',
         'attackType': 'Melee',
@@ -503,7 +503,7 @@ const heroes = {
         'complexity': 3,
         'spells': ["Fortune's End", "Fate's Edict", 'Purifying Flames', 'False Promise', {'shard': 'Rain of Destiny'}]
     },
-    'outworld destroyer': {
+    'outworld_destroyer': {
         'type': 'Intelligence',
         'mainInfo': 'CAN IMPRISON A HERO, MAKING THEM INVULNERABLE',
         'attackType': 'Ranged',
@@ -517,14 +517,14 @@ const heroes = {
         'complexity': 2,
         'spells': ['Swashbuckle', 'Shield Crash', 'Lucky Shot', 'Rolling Thunder', {'shard': 'Roll Up'}]
     },
-    'phantom assassin': {
+    'phantom_assassin': {
         'type': 'Agility',
         'mainInfo': 'BLINKS ONTO HER FOES WITH CRITICAL STRIKES',
         'attackType': 'Melee',
         'complexity': '1',
         'spells': ['Stifling Dagger', 'Phantom Strike', 'Blur', 'Coup de Grace', {'shard': 'Fan of Knives'}]
     },
-    'phantom lancer': {
+    'phantom_lancer': {
         'type': 'Agility',
         'mainInfo': 'CREATES ILLUSIONS OF HIMSELF TO TRICK OR ATTACK FOES',
         'attackType': 'Melee',
@@ -538,7 +538,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Icarus Dive', 'Fire Spirits', 'Sun Ray', 'Supernova']
     },
-    'primal beast': {
+    'primal_beast': {
         'type': 'Strength',
         'mainInfo': 'STOMPS OVER EVERYTHING AND SMASHES ENEMIES INTO MESSY BITS',
         'attackType': 'Melee',
@@ -566,7 +566,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Nether Blast', 'Decrepify', 'Nether Ward', 'Life Drain']
     },
-    'queen of pain': {
+    'queen_of_pain': {
         'type': 'Intelligence',
         'mainInfo': 'BLINKS IN TO DEAL MASSIVE MAGICAL DAMAGE',
         'attackType': 'Ranged',
@@ -594,28 +594,28 @@ const heroes = {
         'complexity': 3,
         'spells': ['Telekinesis', 'Fade Bolt', 'Arcane Supremacy', 'Spell Steal']
     },
-    'sand king': {
+    'sand_king': {
         'type': 'Universal',
         'mainInfo': 'BURROWS TO STUN AND SLOW ENEMIES',
         'attackType': 'Melee',
         'complexity': 2,
         'spells': ['Burrowstrike', 'Sand Storm', 'Caustic Finale', 'Epicenter']
     },
-    'shadow demon': {
+    'shadow_demon': {
         'type': 'Intelligence',
         'mainInfo': 'STACKS EXPONENTIAL POISON DAMAGE AGAINST HIS FOES',
         'attackType': 'Ranged',
         'complexity': 2,
         'spells': ['Disruption', 'Disseminate', 'Shadow Poison', 'Demonic Purge', {'shard': 'Demonic Cleanse'}]
     },
-    'shadow fiend': {
+    'shadow_fiend': {
         'type': 'Agility',
         'mainInfo': 'UNLEASHES THE SOULS OF FALLEN ENEMIES FOR DAMAGE',
         'attackType': 'Ranged',
         'complexity': 2,
         'spells': ['Shadowraze', 'Necromastery', 'Presence of the Dark Lord', 'Requiem of Souls']
     },
-    'shadow shaman': {
+    'shadow_shaman': {
         'type': 'Intelligence',
         'mainInfo': 'SUMMONS POWERFUL SERPENT WARDS TO DEAL DAMAGE',
         'attackType': 'Ranged',
@@ -629,7 +629,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Arcance Curse', 'Glaives of Wisdom', 'Last Word', 'Global Silence']
     },
-    'skywrath mage': {
+    'skywrath_mage': {
         'type': 'Intelligence',
         'mainInfo': 'CASTS HIGH DAMAGE MAGICAL SPELLS ON A SINGLE TARGET',
         'attackType': 'Ranged',
@@ -671,7 +671,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Spectral Dagger', 'Desolate', 'Dispersion', 'Shadow Step', {'scepter': 'Haunt'}]
     },
-    'storm spirit': {
+    'storm_spirit': {
         'type': 'Intelligence',
         'mainInfo': 'ZIPS ACROSS THE MAP TO ENGAGE IN FIGHTS',
         'attackType': 'Ranged',
@@ -685,7 +685,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Storm Hammer', 'Great Cleave', 'Warcry', "God's Strength"]
     },
-    'spirit breaker': {
+    'spirit_breaker': {
         'type': 'Strength',
         'mainInfo': 'CHARGES DOWN ENEMIES FROM ANYWHERE ON THE MAP',
         'attackType': 'Melee',
@@ -699,7 +699,7 @@ const heroes = {
         'complexity': 2,
         'spells': ['Sticky Bomb', 'Reactive Tazer', 'Blast Off!', 'Proximity Mines', {'scepter': 'Minefield Sign'}]
     },
-    'templar assassin': {
+    'templar_assassin': {
         'type': 'Agility',
         'mainInfo': 'SLOWS DOWN ENEMIES WITH TRAPS',
         'attackType': 'Ranged',
@@ -741,14 +741,14 @@ const heroes = {
         'complexity': 2,
         'spells': ['Avalanche', 'Toss', 'Tree Grab', 'Grow', {'scepter': 'Tree Volley'}]
     },
-    'treant protector': {
+    'treant_protector': {
         'type': 'Strength',
         'mainInfo': "CALLS UPON THE FOREST TO ROOT HIS FOES",
         'attackType': 'Melee',
         'complexity': 2,
         'spells': ["Nature's Grasp", 'Leech Seed', 'Living Armor', "Nature's Guise", 'Overgrowth', {'scepter': 'Eyes in the Forest'}]
     },
-    'troll warlord': {
+    'troll_warlord': {
         'type': 'Agility',
         'mainInfo': "SWAPS BETWEEN RANGED AND MELEE ATTACKS AT WILL",
         'attackType': 'Ranged',
@@ -783,7 +783,7 @@ const heroes = {
         'complexity': 1,
         'spells': ['Earthshock', 'Overpower', 'Fury Swipes', 'Enrage']
     },
-    'vengeful spirit': {
+    'vengeful_spirit': {
         'type': 'Universal',
         'mainInfo': "CAN SWAP HERSELF WITH ANY NEARBY HERO",
         'attackType': 'Ranged',
@@ -811,7 +811,7 @@ const heroes = {
         'complexity': 3,
         'spells': ['Grave Chill', 'Soul Assumption', "Gravekeeper's Cloak", 'Summon Familiars', {'scepter': 'Silent as the Grave'}]
     },
-    'void spirit': {
+    'void_spirit': {
         'type': 'Universal',
         'mainInfo': "STEPS IN AND OUT OF THE MORTAL PLANE TO STRIKE HIS FOES",
         'attackType': 'Melee',
@@ -839,21 +839,21 @@ const heroes = {
         'complexity': 2,
         'spells': ['Shackleshot', 'Powershot', 'Windrun', 'Focus Fire', {'shard': 'Gale Force'}]
     },
-    'winter wyvern': {
+    'winter_wyvern': {
         'type': 'Universal',
         'mainInfo': "ABLE TO FORCE HER ENEMIES TO ATTACK THEIR OWN ALLY",
         'attackType': 'Ranged',
         'complexity': 2,
         'spells': ['Arctic Burn', 'Splinter Blast', 'Cold Embrace', "Winter's Curse"]
     },
-    'witch doctor': {
+    'witch_doctor': {
         'type': 'Intelligence',
         'mainInfo': "CHANNELS A HIGH DAMAGE DEATH WARD",
         'attackType': 'Ranged',
         'complexity': 1,
         'spells': ['Paralyzing Cask', 'Voodoo Restoration', 'Maledict', 'Death Ward', {'shard': 'Voodoo Switcheroo'}]
     },
-    'wraith king': {
+    'wraith_king': {
         'type': 'Strength',
         'mainInfo': "CAN REINCARNATE INSTANTLY UPON DEATH",
         'attackType': 'Melee',
