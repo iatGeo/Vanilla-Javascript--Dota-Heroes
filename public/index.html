@@ -5,29 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <h2>Filters</h2>
-        <h5>Filter by</h5>
-        <div>
-            <span>ATTACK TYPE</span>
-            <ul>
-                <li>Melee</li>
-                <li>Ranged</li>
-            </ul>
+        <span>Filter by</span>
+        <div class="navbox">
+            <section class="attack_type">
+                <span>ATTACK TYPE</span>
+                <div>
+                    <input type="checkbox" name="" id="checkboxMelee">
+                    <label for="checkboxMelee">Melee</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="checkboxRanged">
+                    <label for="checkboxRanged">Ranged</label>
+                </div>
+            </section>
         </div>
-        <div>
-            <span>PRIMARY ATTRIBUTE</span>
-            <ul>
-                <li>Strength</li>
-                <li>Agility</li>
-                <li>Intelligence</li>
-                <li>Universal</li>
-            </ul>
+        <div class="navbox">
+            <section class="attributes">
+                <span>PRIMARY ATTRIBUTES</span>
+                <div>
+                    <input type="checkbox" name="" id="checkboxStr">
+                    <label for="checkboxStr">Strength</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="checkboxAgi">
+                    <label for="checkboxAgi">Agility</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="checkboxInt">
+                    <label for="checkboxInt">Intelligence</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="checkboxUni">
+                    <label for="checkboxUni">Universal</label>
+                </div>
+            </section>
         </div>
     </nav>
-    <section>
+    <main>
         <img src="images/abaddon.png" alt="">
         <img src="images/alchemist.png" alt="">
         <img src="images/ancient_apparition.png" alt="">
@@ -55,7 +76,7 @@
         <img src="images/disruptor.png" alt="">
         <img src="images/doom_bringer.png" alt="">
         <img src="images/dragon_knight.png" alt="">
-        <img src="images/drow_ranger.png" alt="">
+        <img src="images/Drow_Ranger.webp" alt="">
         <img src="images/earth_spirit.png" alt="">
         <img src="images/earthshaker.png" alt="">
         <img src="images/elder_titan.png" alt="">
@@ -152,6 +173,6 @@
         <img src="images/wisp.png" alt="">
         <img src="images/witch_doctor.png" alt="">
         <img src="images/zuus.png" alt="">
-    </section>
+    </main>
 </body>
 </html>
