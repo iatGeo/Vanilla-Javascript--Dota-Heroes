@@ -671,6 +671,13 @@ const heroes = {
         'complexity': 2,
         'spells': ['Spectral Dagger', 'Desolate', 'Dispersion', 'Shadow Step', {'scepter': 'Haunt'}]
     },
+    'spirit_breaker': {
+        'type': 'Strength',
+        'mainInfo': 'CHARGES DOWN ENEMIES FROM ANYWHERE ON THE MAP',
+        'attackType': 'Melee',
+        'complexity': 1,
+        'spells': ['Charge of Darkness', 'Bulldoze', 'Greater Bash', 'Nether Strike', {'shard': 'Planar Pocket'}]
+    },
     'storm_spirit': {
         'type': 'Intelligence',
         'mainInfo': 'ZIPS ACROSS THE MAP TO ENGAGE IN FIGHTS',
@@ -684,13 +691,6 @@ const heroes = {
         'attackType': 'Melee',
         'complexity': 1,
         'spells': ['Storm Hammer', 'Great Cleave', 'Warcry', "God's Strength"]
-    },
-    'spirit_breaker': {
-        'type': 'Strength',
-        'mainInfo': 'CHARGES DOWN ENEMIES FROM ANYWHERE ON THE MAP',
-        'attackType': 'Melee',
-        'complexity': 1,
-        'spells': ['Charge of Darkness', 'Bulldoze', 'Greater Bash', 'Nether Strike', {'shard': 'Planar Pocket'}]
     },
     'techies': {
         'type': 'Universal',
@@ -866,8 +866,5 @@ const heroes = {
         'attackType': 'Ranged',
         'complexity': 1,
         'spells': ['Arc Lighting', 'Lighting Bolt', 'Heavenly Jump', "Thundergod's Wrath", {'shard': 'Lighting Hands', 'scepter': 'Nimbus'}]
-    },
-    'unknown': {
-        'message': 'data not available'
     }
 }
