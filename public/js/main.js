@@ -1,8 +1,12 @@
 const baseUrl = 'http://localhost:8000/heroes'
 document.querySelector('.meleeFilter').addEventListener('click', filterMelee)
 document.querySelector('.rangedFilter').addEventListener('click', filterRanged)
+document.querySelector('.strFilter').addEventListener('click', filterStr)
+document.querySelector('.agiFilter').addEventListener('click', filterAgi)
+document.querySelector('.intFilter').addEventListener('click', filterInt)
+document.querySelector('.uniFilter').addEventListener('click', filterUni)
 
-//Fetching the heroes database
+//Fetching the heroes data to pass on to the CBFs
 async function getHeroes(){
     try {
         const response = await fetch(baseUrl)
@@ -15,6 +19,7 @@ async function getHeroes(){
 }
 
 
+//All eventListeners' CBFs
 async function filterMelee(){
     try {
         const data = await getHeroes()
@@ -39,6 +44,70 @@ async function filterRanged(){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
             }
             if( hero['attackType']!=='Ranged' ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+        })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+async function filterStr(){
+    try {
+        const data = await getHeroes()
+        data.forEach(hero => {
+            if( document.getElementById('checkboxAgi').checked || document.getElementById('checkboxInt').checked || document.getElementById('checkboxUni').checked ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+            if( hero['type']!=='Strength' ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+        })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+async function filterAgi(){
+    try {
+        const data = await getHeroes()
+        data.forEach(hero => {
+            if( document.getElementById('checkboxStr').checked || document.getElementById('checkboxInt').checked || document.getElementById('checkboxUni').checked ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+            if( hero['type']!=='Agility' ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+        })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+async function filterInt(){
+    try {
+        const data = await getHeroes()
+        data.forEach(hero => {
+            if( document.getElementById('checkboxStr').checked || document.getElementById('checkboxAgi').checked || document.getElementById('checkboxUni').checked ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+            if( hero['type']!=='Intelligence' ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+        })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+async function filterUni(){
+    try {
+        const data = await getHeroes()
+        data.forEach(hero => {
+            if( document.getElementById('checkboxStr').checked || document.getElementById('checkboxAgi').checked || document.getElementById('checkboxInt').checked ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
+            if( hero['type']!=='Universal' ){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
             }
         })
