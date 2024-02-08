@@ -1,5 +1,6 @@
 const baseUrl = 'http://localhost:8000/heroes'
 document.querySelector('.meleeFilter').addEventListener('click', filterMelee)
+document.querySelector('.rangedFilter').addEventListener('click', filterRanged)
 
 //Fetching the heroes database
 async function getHeroes(){
@@ -20,7 +21,20 @@ async function filterMelee(){
         data.forEach(hero => {
             if( hero['attackType']!=='Melee' ){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
-            } 
+            }
+        })
+    } catch (error) {
+        console.error(error)
+    }
+}
+
+async function filterRanged(){
+    try {
+        const data = await getHeroes()
+        data.forEach(hero => {
+            if( hero['attackType']!=='Ranged' ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
         })
     } catch (error) {
         console.error(error)
