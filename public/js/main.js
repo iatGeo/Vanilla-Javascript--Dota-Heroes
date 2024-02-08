@@ -19,6 +19,9 @@ async function filterMelee(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
+            if( document.getElementById('checkboxRanged').checked ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
             if( hero['attackType']!=='Melee' ){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
             }
@@ -32,6 +35,9 @@ async function filterRanged(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
+            if( document.getElementById('checkboxMelee').checked ){
+                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+            }
             if( hero['attackType']!=='Ranged' ){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
             }
