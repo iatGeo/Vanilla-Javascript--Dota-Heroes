@@ -73,3 +73,7 @@ main{
     justify-content: flex-start;
     gap: 10px;
 }
+
+.hidden{
+    display: none;
+}

@@ -520,7 +520,7 @@ const heroes = [
         'spells': ['Mirror Image', 'Ensnare', 'Rip Tide', 'Song of the Siren', {'scepter': 'Reel In'}]
     },
     {
-        'name': "nature's_prophet",
+        'name': "natures_prophet",
         'type': 'Intelligence',
         'mainInfo': 'ABLE TO TELEPORT TO ANY LOCATION ON THE MAP AT WILL',
         'attackType': 'Ranged',
