@@ -99,6 +99,9 @@ async function filterInt(){
             if( checkboxStr.checked || checkboxAgi.checked || checkboxUni.checked ){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
             }
+            if( checkboxRanged.checked ){
+                hero['attackType']!=='Melee' ? document.querySelector(`.${hero['name']}`).classList.remove('hidden') : document.querySelector(`.${hero['name']}`).classList.add('hidden')
+            }
             if( hero['type']!=='Intelligence' ){
                 document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
             }

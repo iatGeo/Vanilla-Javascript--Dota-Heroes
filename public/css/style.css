@@ -66,6 +66,7 @@ label{
 
 /* Images' design */
 main{
+    position: fixed;
     margin-left: 9.2rem;
     padding: 1rem;
     display: flex;
