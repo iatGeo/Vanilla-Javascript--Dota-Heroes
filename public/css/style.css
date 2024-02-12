@@ -2,6 +2,7 @@
 :root{
     font-size: 16px;
     font-family: "Roboto", sans-serif;
+    
 }
 *{
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 body{
     background-color: hsla(341, 0%, 15%, 1);
     color: hsla(341, 0%, 68%, 1);
-    margin: 0;
+    margin: 0.5rem;
     padding: 0;
     display: flex;
 }
@@ -29,7 +30,7 @@ body::-webkit-scrollbar-thumb{
 
 /* Navbar design */
 .navbar{
-    width: 5rem;
+    width: 8rem;
     height: 100vh;
     position: fixed;
     padding: 0;
@@ -38,18 +39,17 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     align-items: left;
 }
-h2{
-    margin-left: 0.5rem;
-}
+
 h2 + span{
-    margin: 4rem 0.5rem 1rem 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 .navbox{
-    margin: 1rem 0.5rem 0 0.5rem;
-    border: 0px hsla(202, 8%, 43%, 1) solid;
+    margin-top: 1rem;
     padding: 0.5rem 0;
+    border: 0px hsla(202, 8%, 43%, 1) solid;
     background-color: hsla(202, 8%, 22%, 1);
-    width: 180%;
+    width: auto;
 }
 span + div{
     margin-top: 0.5rem;
@@ -66,13 +66,17 @@ label{
 
 /* Images' design */
 main{
-    position: fixed;
-    margin-left: 9.2rem;
+    margin-left: 8rem;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 12px;
+}
+img{
+    flex: 0.5;
+    min-width: 170px;
+    max-width: 220px;
 }
 
 .hidden{
