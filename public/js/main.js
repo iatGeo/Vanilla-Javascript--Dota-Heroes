@@ -32,7 +32,7 @@ async function filterMelee(){
         const data = await getHeroes()
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
-            
+
             if( hero['attackType']!=='Melee' ) targetHero.classList.toggle('hidden')
             checkboxMelee.checked ? checkboxRanged.disabled = true 
                 : checkboxRanged.disabled = false
@@ -68,11 +68,6 @@ async function filterStr(){
             }
             if( hero['type']!=='Strength' ){
                 targetHero.classList.toggle('hidden')
-            }
-            if( checkboxMelee.checked ){
-                if( hero['attackType']==='Melee' ){
-
-                }
             }
         })
     } catch (error) {
