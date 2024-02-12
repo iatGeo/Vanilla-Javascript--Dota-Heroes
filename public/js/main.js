@@ -26,18 +26,15 @@ async function getHeroes(){
     }
 }
 
-
-//All eventListeners' CBFs
+// All eventListeners' CBFs
 async function filterMelee(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
-            if( checkboxRanged.checked ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
-            }
-            if( hero['attackType']!=='Melee' ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
-            }
+            const targetHero = document.querySelector(`.${hero['name']}`)
+            if( hero['attackType']!=='Melee' ) targetHero.classList.toggle('hidden')
+            checkboxMelee.checked ? checkboxRanged.disabled = true 
+                : checkboxRanged.disabled = false
         })
     } catch (error) {
         console.error(error)
@@ -48,12 +45,10 @@ async function filterRanged(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
-            if( checkboxMelee.checked ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
-            }
-            if( hero['attackType']!=='Ranged' ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
-            }
+            const targetHero = document.querySelector(`.${hero['name']}`)
+            if( hero['attackType']!=='Ranged' ) targetHero.classList.toggle('hidden')
+            checkboxRanged.checked ? checkboxMelee.disabled = true 
+                : checkboxMelee.disabled = false
         })
     } catch (error) {
         console.error(error)
