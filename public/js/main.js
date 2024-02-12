@@ -32,6 +32,7 @@ async function filterMelee(){
         const data = await getHeroes()
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
+            
             if( hero['attackType']!=='Melee' ) targetHero.classList.toggle('hidden')
             checkboxMelee.checked ? checkboxRanged.disabled = true 
                 : checkboxRanged.disabled = false
@@ -46,6 +47,7 @@ async function filterRanged(){
         const data = await getHeroes()
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
+
             if( hero['attackType']!=='Ranged' ) targetHero.classList.toggle('hidden')
             checkboxRanged.checked ? checkboxMelee.disabled = true 
                 : checkboxMelee.disabled = false
@@ -59,11 +61,18 @@ async function filterStr(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
+            const targetHero = document.querySelector(`.${hero['name']}`)
+
             if( checkboxAgi.checked || checkboxInt.checked || checkboxUni.checked ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
             }
             if( hero['type']!=='Strength' ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
+            }
+            if( checkboxMelee.checked ){
+                if( hero['attackType']==='Melee' ){
+
+                }
             }
         })
     } catch (error) {
@@ -75,11 +84,13 @@ async function filterAgi(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
+            const targetHero = document.querySelector(`.${hero['name']}`)
+
             if( checkboxStr.checked || checkboxInt.checked || checkboxUni.checked ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
             }
             if( hero['type']!=='Agility' ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
             }
         })
     } catch (error) {
@@ -91,14 +102,13 @@ async function filterInt(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
+            const targetHero = document.querySelector(`.${hero['name']}`)
+
             if( checkboxStr.checked || checkboxAgi.checked || checkboxUni.checked ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
-            }
-            if( checkboxRanged.checked ){
-                hero['attackType']!=='Melee' ? document.querySelector(`.${hero['name']}`).classList.remove('hidden') : document.querySelector(`.${hero['name']}`).classList.add('hidden')
+                targetHero.classList.toggle('hidden')
             }
             if( hero['type']!=='Intelligence' ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
             }
         })
     } catch (error) {
@@ -110,11 +120,13 @@ async function filterUni(){
     try {
         const data = await getHeroes()
         data.forEach(hero => {
+            const targetHero = document.querySelector(`.${hero['name']}`)
+
             if( checkboxStr.checked || checkboxAgi.checked || checkboxInt.checked ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
             }
             if( hero['type']!=='Universal' ){
-                document.querySelector(`.${hero['name']}`).classList.toggle('hidden')
+                targetHero.classList.toggle('hidden')
             }
         })
     } catch (error) {
