@@ -33,9 +33,18 @@ async function filterMelee(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( hero['attackType']!=='Melee' ) targetHero.classList.toggle('hidden')
+            if( hero['attackType']!=='Melee' ){
+                targetHero.classList.add('hidden')
+            }else{
+                targetHero.classList.remove('hidden')
+            }
+
             checkboxMelee.checked ? checkboxRanged.disabled = true 
                 : checkboxRanged.disabled = false
+
+            if( !checkboxMelee.checked && hero['attackType']!=='Melee' ){
+                targetHero.classList.remove('hidden')
+            }
         })
     } catch (error) {
         console.error(error)
@@ -48,9 +57,38 @@ async function filterRanged(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( hero['attackType']!=='Ranged' ) targetHero.classList.toggle('hidden')
+            if( hero['attackType']!=='Ranged' ){
+                targetHero.classList.add('hidden')
+            }else{
+                targetHero.classList.remove('hidden')
+            }
+
+            // if( checkboxStr.checked ){
+            //     hero['type']==='Strength' ? targetHero.classList.remove('hidden') 
+            //         : targetHero.classList.add('hidden')
+            // }
+
+            // if( checkboxAgi.checked ){
+            //     hero['type']==='Agility' ? targetHero.classList.remove('hidden') 
+            //         : targetHero.classList.add('hidden')
+            // }
+
+            // if( checkboxInt.checked ){
+            //     hero['type']==='Intelligence' ? targetHero.classList.remove('hidden') 
+            //         : targetHero.classList.add('hidden')
+            // }
+
+            // if( checkboxUni.checked ){
+            //     hero['type']==='Universal' ? targetHero.classList.remove('hidden') 
+            //         : targetHero.classList.add('hidden')
+            // }
+            
             checkboxRanged.checked ? checkboxMelee.disabled = true 
                 : checkboxMelee.disabled = false
+
+            if( !checkboxRanged.checked && hero['attackType']!=='Ranged' ){
+                targetHero.classList.remove('hidden')
+            }
         })
     } catch (error) {
         console.error(error)
@@ -63,11 +101,14 @@ async function filterStr(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( checkboxAgi.checked || checkboxInt.checked || checkboxUni.checked ){
-                targetHero.classList.toggle('hidden')
-            }
             if( hero['type']!=='Strength' ){
-                targetHero.classList.toggle('hidden')
+                targetHero.classList.add('hidden')
+            }else{
+                targetHero.classList.remove('hidden')
+            }
+
+            if( !checkboxStr.checked && hero['type']!=='Strength' ){
+                targetHero.classList.remove('hidden')
             }
         })
     } catch (error) {
@@ -81,11 +122,14 @@ async function filterAgi(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( checkboxStr.checked || checkboxInt.checked || checkboxUni.checked ){
-                targetHero.classList.toggle('hidden')
-            }
             if( hero['type']!=='Agility' ){
-                targetHero.classList.toggle('hidden')
+                targetHero.classList.add('hidden')
+            }else{
+                targetHero.classList.remove('hidden')
+            }
+
+            if( !checkboxAgi.checked && hero['type']!=='Agility' ){
+                targetHero.classList.remove('hidden')
             }
         })
     } catch (error) {
@@ -99,11 +143,14 @@ async function filterInt(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( checkboxStr.checked || checkboxAgi.checked || checkboxUni.checked ){
-                targetHero.classList.toggle('hidden')
-            }
             if( hero['type']!=='Intelligence' ){
-                targetHero.classList.toggle('hidden')
+                targetHero.classList.add('hidden')
+            }else{
+                targetHero.classList.remove('hidden')
+            }
+
+            if( !checkboxInt.checked && hero['type']!=='Intelligence' ){
+                targetHero.classList.remove('hidden')
             }
         })
     } catch (error) {
@@ -117,11 +164,14 @@ async function filterUni(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( checkboxStr.checked || checkboxAgi.checked || checkboxInt.checked ){
-                targetHero.classList.toggle('hidden')
-            }
             if( hero['type']!=='Universal' ){
-                targetHero.classList.toggle('hidden')
+                targetHero.classList.add('hidden')
+            }else{
+                targetHero.classList.remove('hidden')
+            }
+
+            if( !checkboxUni.checked && hero['type']!=='Universal' ){
+                targetHero.classList.remove('hidden')
             }
         })
     } catch (error) {
