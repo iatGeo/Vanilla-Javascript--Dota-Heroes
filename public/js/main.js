@@ -26,6 +26,18 @@ async function getHeroes(){
     }
 }
 
+//Fetching the heroes data to pass on to the CBFs
+async function getHeroes(){
+    try {
+        const response = await fetch(baseUrl)
+        const data = await response.json()
+        const heroes = Object.keys(data).map(key => data[key])
+        return heroes
+    } catch (error) {
+        console.error(error)
+    }
+}
+
 // All eventListeners' CBFs
 async function filterMelee(){
     try {
@@ -34,6 +46,7 @@ async function filterMelee(){
             const targetHero = document.querySelector(`.${hero['name']}`)
 
             if( hero['attackType']!=='Melee' ) targetHero.classList.toggle('hidden')
+
             checkboxMelee.checked ? checkboxRanged.disabled = true 
                 : checkboxRanged.disabled = false
         })
@@ -49,6 +62,7 @@ async function filterRanged(){
             const targetHero = document.querySelector(`.${hero['name']}`)
 
             if( hero['attackType']!=='Ranged' ) targetHero.classList.toggle('hidden')
+
             checkboxRanged.checked ? checkboxMelee.disabled = true 
                 : checkboxMelee.disabled = false
         })
