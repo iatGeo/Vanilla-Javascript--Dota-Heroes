@@ -33,18 +33,21 @@ async function filterMelee(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( hero['attackType']!=='Melee' ){
-                targetHero.classList.add('hidden')
-            }else{
-                targetHero.classList.remove('hidden')
+            if( checkboxStr.checked ){
+                let results = data.filter(elem => elem['type']==='Strength')
+                results.forEach(elem => {
+                    if( elem['attackType']!=='Melee' ){
+                        document.querySelector(`.${elem['name']}`).classList.toggle('hidden')
+                    }
+                })
             }
 
             checkboxMelee.checked ? checkboxRanged.disabled = true 
                 : checkboxRanged.disabled = false
 
-            if( !checkboxMelee.checked && hero['attackType']!=='Melee' ){
-                targetHero.classList.remove('hidden')
-            }
+            // if( !checkboxMelee.checked && hero['attackType']!=='Melee' ){
+            //     targetHero.classList.remove('hidden')
+            // }
         })
     } catch (error) {
         console.error(error)
@@ -57,10 +60,14 @@ async function filterRanged(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( hero['attackType']!=='Ranged' ){
-                targetHero.classList.add('hidden')
-            }else{
-                targetHero.classList.remove('hidden')
+
+            if( checkboxStr.checked ){
+                let results = data.filter(elem => elem['type']==='Strength')
+                results.forEach(elem => {
+                    if( elem['attackType']!=='Ranged' ){
+                        document.querySelector(`.${elem['name']}`).classList.toggle('hidden')
+                    }
+                })
             }
 
             // if( checkboxStr.checked ){
@@ -101,15 +108,8 @@ async function filterStr(){
         data.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( hero['type']!=='Strength' ){
-                targetHero.classList.add('hidden')
-            }else{
-                targetHero.classList.remove('hidden')
-            }
+            if( hero['type']!=='Strength' ) targetHero.classList.toggle('hidden')
 
-            if( !checkboxStr.checked && hero['type']!=='Strength' ){
-                targetHero.classList.remove('hidden')
-            }
         })
     } catch (error) {
         console.error(error)
