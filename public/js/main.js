@@ -28,18 +28,6 @@ async function getHeroes(){
 }
 
 
-//Fetching the heroes data to pass on to the CBFs
-async function getHeroes(){
-    try {
-        const response = await fetch(baseUrl)
-        const data = await response.json()
-        const heroes = Object.keys(data).map(key => data[key])
-        return heroes
-    } catch (error) {
-        console.error(error)
-    }
-}
-
 // EventListeners' CBFunction
 async function filterHeroes () {
     try {
