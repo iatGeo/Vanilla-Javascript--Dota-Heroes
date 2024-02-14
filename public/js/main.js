@@ -1,17 +1,18 @@
 const baseUrl = 'http://localhost:8000/heroes'
-const checkboxRanged = document.getElementById('checkboxRanged')
 const checkboxMelee = document.getElementById('checkboxMelee')
+const checkboxRanged = document.getElementById('checkboxRanged')
 const checkboxStr = document.getElementById('checkboxStr')
 const checkboxAgi = document.getElementById('checkboxAgi')
 const checkboxInt = document.getElementById('checkboxInt')
 const checkboxUni = document.getElementById('checkboxUni')
+const checkboxes = [checkboxMelee, checkboxRanged, checkboxStr, checkboxAgi, checkboxInt, checkboxUni]
 
-document.querySelector('.meleeFilter').addEventListener('click', filterMelee)
-document.querySelector('.rangedFilter').addEventListener('click', filterRanged)
-document.querySelector('.strFilter').addEventListener('click', filterStr)
-document.querySelector('.agiFilter').addEventListener('click', filterAgi)
-document.querySelector('.intFilter').addEventListener('click', filterInt)
-document.querySelector('.uniFilter').addEventListener('click', filterUni)
+
+//Loop through all navbar-checkboxes to add eventListeners
+const filters = document.querySelectorAll('.filterHeroes')
+for (let i=0; i<filters.length; i++) {
+    filters[i].addEventListener('click', filterHeroes)
+}
 
 
 //Fetching the heroes data to pass on to the CBFs
@@ -26,6 +27,7 @@ async function getHeroes(){
     }
 }
 
+
 //Fetching the heroes data to pass on to the CBFs
 async function getHeroes(){
     try {
@@ -38,102 +40,41 @@ async function getHeroes(){
     }
 }
 
-// All eventListeners' CBFs
-async function filterMelee(){
+// EventListeners' CBFunction
+async function filterHeroes () {
     try {
-        const data = await getHeroes()
-        data.forEach(hero => {
-            const targetHero = document.querySelector(`.${hero['name']}`)
-
-            if( hero['attackType']!=='Melee' ) targetHero.classList.toggle('hidden')
-            checkboxMelee.checked ? checkboxRanged.disabled = true 
-                : checkboxRanged.disabled = false
-        })
-    } catch (error) {
-        console.error(error)
-    }
-}
-
-async function filterRanged(){
-    try {
-        const data = await getHeroes()
-        data.forEach(hero => {
-            const targetHero = document.querySelector(`.${hero['name']}`)
-
-            if( hero['attackType']!=='Ranged' ) targetHero.classList.toggle('hidden')
-            checkboxRanged.checked ? checkboxMelee.disabled = true 
+        //If an 'attack-type' filter is checked, disable the other one
+        checkboxRanged.checked ? checkboxMelee.disabled = true 
                 : checkboxMelee.disabled = false
-        })
-    } catch (error) {
-        console.error(error)
-    }
-}
+        checkboxMelee.checked ? checkboxRanged.disabled = true 
+                : checkboxRanged.disabled = false
 
-async function filterStr(){
-    try {
-        const data = await getHeroes()
-        data.forEach(hero => {
+        //Check which checkboxes are checked
+        let filtered = []
+        for (let i=0; i<checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                let str = checkboxes[i].name
+                filtered.includes(str) ? null : filtered.push(str)
+            }
+        }
+
+        //Loop through all heroes and apply filters at the corresponding images
+        const heroes = await getHeroes()
+        heroes.forEach(hero => {
             const targetHero = document.querySelector(`.${hero['name']}`)
 
-            if( checkboxAgi.checked || checkboxInt.checked || checkboxUni.checked ){
-                targetHero.classList.toggle('hidden')
-            }
-            if( hero['type']!=='Strength' ){
-                targetHero.classList.toggle('hidden')
-            }
-        })
-    } catch (error) {
-        console.error(error)
-    }
-}
+            if (filtered.length===0) targetHero.classList.remove('hidden')
 
-async function filterAgi(){
-    try {
-        const data = await getHeroes()
-        data.forEach(hero => {
-            const targetHero = document.querySelector(`.${hero['name']}`)
-
-            if( checkboxStr.checked || checkboxInt.checked || checkboxUni.checked ){
-                targetHero.classList.toggle('hidden')
+            if (filtered.length===1) {
+                filtered.includes(hero['attackType']) || filtered.includes(hero['type']) ? targetHero.classList.remove('hidden') : targetHero.classList.add('hidden')
             }
-            if( hero['type']!=='Agility' ){
-                targetHero.classList.toggle('hidden')
-            }
-        })
-    } catch (error) {
-        console.error(error)
-    }
-}
 
-async function filterInt(){
-    try {
-        const data = await getHeroes()
-        data.forEach(hero => {
-            const targetHero = document.querySelector(`.${hero['name']}`)
-
-            if( checkboxStr.checked || checkboxAgi.checked || checkboxUni.checked ){
-                targetHero.classList.toggle('hidden')
+            if (filtered.length>=2 && (filtered.includes('Melee') || filtered.includes('Ranged'))) {
+                filtered.includes(hero['attackType']) && filtered.includes(hero['type']) ? targetHero.classList.remove('hidden') : targetHero.classList.add('hidden')
             }
-            if( hero['type']!=='Intelligence' ){
-                targetHero.classList.toggle('hidden')
-            }
-        })
-    } catch (error) {
-        console.error(error)
-    }
-}
 
-async function filterUni(){
-    try {
-        const data = await getHeroes()
-        data.forEach(hero => {
-            const targetHero = document.querySelector(`.${hero['name']}`)
-
-            if( checkboxStr.checked || checkboxAgi.checked || checkboxInt.checked ){
-                targetHero.classList.toggle('hidden')
-            }
-            if( hero['type']!=='Universal' ){
-                targetHero.classList.toggle('hidden')
+            if (filtered.length>=2 && !(filtered.includes('Melee') || filtered.includes('Ranged'))) {
+                filtered.includes(hero['attackType']) || filtered.includes(hero['type']) ? targetHero.classList.remove('hidden') : targetHero.classList.add('hidden')
             }
         })
     } catch (error) {
