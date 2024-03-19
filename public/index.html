@@ -1,179 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <h2>Filters</h2>
-        <span>Filter by</span>
-        <div class="navbox">
-            <section class="attack_type">
-                <span>ATTACK TYPE</span>
-                <div>
-                    <input type="checkbox" name="Melee" id="checkboxMelee" class="meleeFilter filterHeroes">
-                    <label for="checkboxMelee" class="meleeFilter">Melee</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Ranged" id="checkboxRanged" class="rangedFilter filterHeroes">
-                    <label for="checkboxRanged" class="rangedFilter">Ranged</label>
-                </div>
-            </section>
-        </div>
-        <div class="navbox">
-            <section class="attributes">
-                <span>PRIMARY ATTRIBUTES</span>
-                <div>
-                    <input type="checkbox" name="Strength" id="checkboxStr" class="strFilter filterHeroes">
-                    <label for="checkboxStr">Strength</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Agility" id="checkboxAgi" class="agiFilter filterHeroes">
-                    <label for="checkboxAgi">Agility</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Intelligence" id="checkboxInt" class="intFilter filterHeroes">
-                    <label for="checkboxInt">Intelligence</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="Universal" id="checkboxUni" class="uniFilter filterHeroes">
-                    <label for="checkboxUni">Universal</label>
-                </div>
-            </section>
-        </div>
+      <h2>Filters</h2>
+      <span>Filter by</span>
+      <div class="navbox">
+        <section class="attack_type">
+          <span>ATTACK TYPE</span>
+          <div>
+            <input
+              type="checkbox"
+              name="Melee"
+              id="checkboxMelee"
+              class="meleeFilter filterHeroes"
+            />
+            <label for="checkboxMelee" class="meleeFilter">Melee</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="Ranged"
+              id="checkboxRanged"
+              class="rangedFilter filterHeroes"
+            />
+            <label for="checkboxRanged" class="rangedFilter">Ranged</label>
+          </div>
+        </section>
+      </div>
+      <div class="navbox">
+        <section class="attributes">
+          <span>PRIMARY ATTRIBUTES</span>
+          <div>
+            <input
+              type="checkbox"
+              name="Strength"
+              id="checkboxStr"
+              class="strFilter filterHeroes"
+            />
+            <label for="checkboxStr">Strength</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="Agility"
+              id="checkboxAgi"
+              class="agiFilter filterHeroes"
+            />
+            <label for="checkboxAgi">Agility</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="Intelligence"
+              id="checkboxInt"
+              class="intFilter filterHeroes"
+            />
+            <label for="checkboxInt">Intelligence</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="Universal"
+              id="checkboxUni"
+              class="uniFilter filterHeroes"
+            />
+            <label for="checkboxUni">Universal</label>
+          </div>
+        </section>
+      </div>
     </nav>
     <main>
-        <img src="images/abaddon.png" class="abaddon" alt="">
-        <img src="images/alchemist.png" class="alchemist" alt="">
-        <img src="images/ancient_apparition.png" class="ancient_apparition" alt="">
-        <img src="images/antimage.png" class="antimage" alt="">
-        <img src="images/arc_warden.png" class="arc_warden" alt="">
-        <img src="images/axe.png" class="axe" alt="">
-        <img src="images/bane.png" class="bane" alt="">
-        <img src="images/batrider.png" class="batrider" alt="">
-        <img src="images/beastmaster.png" class="beastmaster" alt="">
-        <img src="images/bloodseeker.png" class="bloodseeker" alt="">
-        <img src="images/bounty_hunter.png" class="bounty_hunter" alt="">
-        <img src="images/brewmaster.png" class="brewmaster" alt="">
-        <img src="images/bristleback.png" class="bristleback" alt="">
-        <img src="images/broodmother.png" class="broodmother" alt="">
-        <img src="images/centaur.png" class="centaur_warrunner" alt="">
-        <img src="images/chaos_knight.png" class="chaos_knight" alt="">
-        <img src="images/chen.png" class="chen" alt="">
-        <img src="images/clinkz.png" class="clinkz" alt="">
-        <img src="images/rattletrap.png" class="clockwerk" alt="">
-        <img src="images/crystal_maiden.png" class="crystal_maiden" alt="">
-        <img src="images/dark_seer.png" class="dark_seer" alt="">
-        <img src="images/dark_willow.png" class="dark_willow" alt="">
-        <img src="images/dawnbreaker.png" class="dawnbreaker" alt="">
-        <img src="images/dazzle.png" class="dazzle" alt="">
-        <img src="images/death_prophet.png" class="death_prophet" alt="">
-        <img src="images/disruptor.png" class="disruptor" alt="">
-        <img src="images/doom_bringer.png" class="doom" alt="">
-        <img src="images/dragon_knight.png" class="dragon_knight" alt="">
-        <img src="images/Drow_Ranger.webp" class="drow_ranger" alt="">
-        <img src="images/earth_spirit.png" class="earth_spirit" alt="">
-        <img src="images/earthshaker.png" class="earthshaker" alt="">
-        <img src="images/elder_titan.png" class="elder_titan" alt="">
-        <img src="images/ember_spirit.png" class="ember_spirit" alt="">
-        <img src="images/enchantress.png" class="enchantress" alt="">
-        <img src="images/enigma.png" class="enigma" alt="">
-        <img src="images/faceless_void.png" class="faceless_void" alt="">
-        <img src="images/grimstroke.png" class="grimstroke" alt="">
-        <img src="images/gyrocopter.png" class="gyrocopter" alt="">
-        <img src="images/hoodwink.png" class="hoodwink" alt="">
-        <img src="images/huskar.png" class="huskar" alt="">
-        <img src="images/invoker.png" class="invoker" alt="">
-        <img src="images/wisp.png" class="io" alt="">
-        <img src="images/jakiro.png" class="jakiro" alt="">
-        <img src="images/juggernaut.png" class="juggernaut" alt="">
-        <img src="images/keeper_of_the_light.png" class="keeper_of_the_light" alt="">
-        <img src="images/kunkka.png" class="kunkka" alt="">
-        <img src="images/legion_commander.png" class="legion_commander" alt="">
-        <img src="images/leshrac.png" class="leshrac" alt="">
-        <img src="images/lich.png" class="lich" alt="">
-        <img src="images/life_stealer.png" class="lifestealer" alt="">
-        <img src="images/lina.png" class="lina" alt="">
-        <img src="images/lion.png" class="lion" alt="">
-        <img src="images/lone_druid.png" class="lone_druid" alt="">
-        <img src="images/luna.png" class="luna" alt="">
-        <img src="images/lycan.png" class="lycan" alt="">
-        <img src="images/magnataur.png" class="magnus" alt="">
-        <img src="images/marci.png" class="marci" alt="">
-        <img src="images/mars.png" class="mars" alt="">
-        <img src="images/medusa.png" class="medusa" alt="">
-        <img src="images/meepo.png" class="meepo" alt="">
-        <img src="images/mirana.png" class="mirana" alt="">
-        <img src="images/monkey_king.png" class="monkey_king" alt="">
-        <img src="images/morphling.png" class="morphling" alt="">
-        <img src="images/muerta.png" class="muerta" alt="">
-        <img src="images/naga_siren.png" class="naga_siren" alt="">
-        <img src="images/furion.png" class="natures_prophet" alt="">
-        <img src="images/necrolyte.png" class="necrophos" alt="">
-        <img src="images/night_stalker.png" class="night_stalker" alt="">
-        <img src="images/nyx_assassin.png" class="nyx_assassin" alt="">
-        <img src="images/ogre_magi.png" class="ogre_magi" alt="">
-        <img src="images/omniknight.png" class="omniknight" alt="">
-        <img src="images/oracle.png" class="oracle" alt="">
-        <img src="images/obsidian_destroyer.png" class="outworld_destroyer" alt="">
-        <img src="images/pangolier.png" class="pangolier" alt="">
-        <img src="images/phantom_assassin.png" class="phantom_assassin" alt="">
-        <img src="images/phantom_lancer.png" class="phantom_lancer" alt="">
-        <img src="images/phoenix.png" class="phoenix" alt="">
-        <img src="images/primal_beast.png" class="primal_beast" alt="">
-        <img src="images/puck.png" class="puck" alt="">
-        <img src="images/pudge.png" class="pudge" alt="">
-        <img src="images/pugna.png" class="pugna" alt="">
-        <img src="images/queenofpain.png" class="queen_of_pain" alt="">
-        <img src="images/razor.png" class="razor" alt="">
-        <img src="images/riki.png" class="riki" alt="">
-        <img src="images/rubick.png" class="rubick" alt="">
-        <img src="images/sand_king.png" class="sand_king" alt="">
-        <img src="images/shadow_demon.png" class="shadow_demon" alt="">
-        <img src="images/nevermore.png" class="shadow_fiend" alt="">
-        <img src="images/shadow_shaman.png" class="shadow_shaman" alt="">
-        <img src="images/silencer.png" class="silencer" alt="">
-        <img src="images/skywrath_mage.png" class="skywrath_mage" alt="">
-        <img src="images/slardar.png" class="slardar" alt="">
-        <img src="images/slark.png" class="slark" alt="">
-        <img src="images/snapfire.png" class="snapfire" alt="">
-        <img src="images/sniper.png" class="sniper" alt="">
-        <img src="images/spectre.png" class="spectre" alt="">
-        <img src="images/spirit_breaker.png" class="spirit_breaker" alt="">
-        <img src="images/storm_spirit.png" class="storm_spirit" alt="">
-        <img src="images/sven.png" class="sven" alt="">
-        <img src="images/techies.png" class="techies" alt="">
-        <img src="images/templar_assassin.png" class="templar_assassin" alt="">
-        <img src="images/terrorblade.png" class="terrorblade" alt="">
-        <img src="images/tidehunter.png" class="tidehunter" alt="">
-        <img src="images/shredder.png" class="timbersaw" alt="">
-        <img src="images/tinker.png" class="tinker" alt="">
-        <img src="images/tiny.png" class="tiny" alt="">
-        <img src="images/treant.png" class="treant_protector" alt="">
-        <img src="images/troll_warlord.png" class="troll_warlord" alt="">
-        <img src="images/tusk.png" class="tusk" alt="">
-        <img src="images/underlord.png" class="underlord" alt="">
-        <img src="images/undying.png" class="undying" alt="">
-        <img src="images/ursa.png" class="ursa" alt="">
-        <img src="images/vengefulspirit.png" class="vengeful_spirit" alt="">
-        <img src="images/venomancer.png" class="venomancer" alt="">
-        <img src="images/viper.png" class="viper" alt="">
-        <img src="images/visage.png" class="visage" alt="">
-        <img src="images/void_spirit.png" class="void_spirit" alt="">
-        <img src="images/warlock.png" class="warlock" alt="">
-        <img src="images/weaver.png" class="weaver" alt="">
-        <img src="images/windrunner.png" class="windranger" alt="">
-        <img src="images/winter_wyvern.png" class="winter_wyvern" alt="">
-        <img src="images/witch_doctor.png" class="witch_doctor" alt="">
-        <img src="images/skeleton_king.png" class="wraith_king" alt="">
-        <img src="images/zuus.png" class="zeus" alt="">
+      <img src="images/abaddon.png" class="abaddon" alt="" />
+      <img src="images/alchemist.png" class="alchemist" alt="" />
+      <img
+        src="images/ancient_apparition.png"
+        class="ancient_apparition"
+        alt=""
+      />
+      <img src="images/antimage.png" class="antimage" alt="" />
+      <img src="images/arc_warden.png" class="arc_warden" alt="" />
+      <img src="images/axe.png" class="axe" alt="" />
+      <img src="images/bane.png" class="bane" alt="" />
+      <img src="images/batrider.png" class="batrider" alt="" />
+      <img src="images/beastmaster.png" class="beastmaster" alt="" />
+      <img src="images/bloodseeker.png" class="bloodseeker" alt="" />
+      <img src="images/bounty_hunter.png" class="bounty_hunter" alt="" />
+      <img src="images/brewmaster.png" class="brewmaster" alt="" />
+      <img src="images/bristleback.png" class="bristleback" alt="" />
+      <img src="images/broodmother.png" class="broodmother" alt="" />
+      <img src="images/centaur.png" class="centaur_warrunner" alt="" />
+      <img src="images/chaos_knight.png" class="chaos_knight" alt="" />
+      <img src="images/chen.png" class="chen" alt="" />
+      <img src="images/clinkz.png" class="clinkz" alt="" />
+      <img src="images/rattletrap.png" class="clockwerk" alt="" />
+      <img src="images/crystal_maiden.png" class="crystal_maiden" alt="" />
+      <img src="images/dark_seer.png" class="dark_seer" alt="" />
+      <img src="images/dark_willow.png" class="dark_willow" alt="" />
+      <img src="images/dawnbreaker.png" class="dawnbreaker" alt="" />
+      <img src="images/dazzle.png" class="dazzle" alt="" />
+      <img src="images/death_prophet.png" class="death_prophet" alt="" />
+      <img src="images/disruptor.png" class="disruptor" alt="" />
+      <img src="images/doom_bringer.png" class="doom" alt="" />
+      <img src="images/dragon_knight.png" class="dragon_knight" alt="" />
+      <img src="images/Drow_Ranger.webp" class="drow_ranger" alt="" />
+      <img src="images/earth_spirit.png" class="earth_spirit" alt="" />
+      <img src="images/earthshaker.png" class="earthshaker" alt="" />
+      <img src="images/elder_titan.png" class="elder_titan" alt="" />
+      <img src="images/ember_spirit.png" class="ember_spirit" alt="" />
+      <img src="images/enchantress.png" class="enchantress" alt="" />
+      <img src="images/enigma.png" class="enigma" alt="" />
+      <img src="images/faceless_void.png" class="faceless_void" alt="" />
+      <img src="images/grimstroke.png" class="grimstroke" alt="" />
+      <img src="images/gyrocopter.png" class="gyrocopter" alt="" />
+      <img src="images/hoodwink.png" class="hoodwink" alt="" />
+      <img src="images/huskar.png" class="huskar" alt="" />
+      <img src="images/invoker.png" class="invoker" alt="" />
+      <img src="images/wisp.png" class="io" alt="" />
+      <img src="images/jakiro.png" class="jakiro" alt="" />
+      <img src="images/juggernaut.png" class="juggernaut" alt="" />
+      <img
+        src="images/keeper_of_the_light.png"
+        class="keeper_of_the_light"
+        alt=""
+      />
+      <img src="images/kunkka.png" class="kunkka" alt="" />
+      <img src="images/legion_commander.png" class="legion_commander" alt="" />
+      <img src="images/leshrac.png" class="leshrac" alt="" />
+      <img src="images/lich.png" class="lich" alt="" />
+      <img src="images/life_stealer.png" class="lifestealer" alt="" />
+      <img src="images/lina.png" class="lina" alt="" />
+      <img src="images/lion.png" class="lion" alt="" />
+      <img src="images/lone_druid.png" class="lone_druid" alt="" />
+      <img src="images/luna.png" class="luna" alt="" />
+      <img src="images/lycan.png" class="lycan" alt="" />
+      <img src="images/magnataur.png" class="magnus" alt="" />
+      <img src="images/marci.png" class="marci" alt="" />
+      <img src="images/mars.png" class="mars" alt="" />
+      <img src="images/medusa.png" class="medusa" alt="" />
+      <img src="images/meepo.png" class="meepo" alt="" />
+      <img src="images/mirana.png" class="mirana" alt="" />
+      <img src="images/monkey_king.png" class="monkey_king" alt="" />
+      <img src="images/morphling.png" class="morphling" alt="" />
+      <img src="images/muerta.png" class="muerta" alt="" />
+      <img src="images/naga_siren.png" class="naga_siren" alt="" />
+      <img src="images/furion.png" class="natures_prophet" alt="" />
+      <img src="images/necrolyte.png" class="necrophos" alt="" />
+      <img src="images/night_stalker.png" class="night_stalker" alt="" />
+      <img src="images/nyx_assassin.png" class="nyx_assassin" alt="" />
+      <img src="images/ogre_magi.png" class="ogre_magi" alt="" />
+      <img src="images/omniknight.png" class="omniknight" alt="" />
+      <img src="images/oracle.png" class="oracle" alt="" />
+      <img
+        src="images/obsidian_destroyer.png"
+        class="outworld_destroyer"
+        alt=""
+      />
+      <img src="images/pangolier.png" class="pangolier" alt="" />
+      <img src="images/phantom_assassin.png" class="phantom_assassin" alt="" />
+      <img src="images/phantom_lancer.png" class="phantom_lancer" alt="" />
+      <img src="images/phoenix.png" class="phoenix" alt="" />
+      <img src="images/primal_beast.png" class="primal_beast" alt="" />
+      <img src="images/puck.png" class="puck" alt="" />
+      <img src="images/pudge.png" class="pudge" alt="" />
+      <img src="images/pugna.png" class="pugna" alt="" />
+      <img src="images/queenofpain.png" class="queen_of_pain" alt="" />
+      <img src="images/razor.png" class="razor" alt="" />
+      <img src="images/riki.png" class="riki" alt="" />
+      <img src="images/rubick.png" class="rubick" alt="" />
+      <img src="images/sand_king.png" class="sand_king" alt="" />
+      <img src="images/shadow_demon.png" class="shadow_demon" alt="" />
+      <img src="images/nevermore.png" class="shadow_fiend" alt="" />
+      <img src="images/shadow_shaman.png" class="shadow_shaman" alt="" />
+      <img src="images/silencer.png" class="silencer" alt="" />
+      <img src="images/skywrath_mage.png" class="skywrath_mage" alt="" />
+      <img src="images/slardar.png" class="slardar" alt="" />
+      <img src="images/slark.png" class="slark" alt="" />
+      <img src="images/snapfire.png" class="snapfire" alt="" />
+      <img src="images/sniper.png" class="sniper" alt="" />
+      <img src="images/spectre.png" class="spectre" alt="" />
+      <img src="images/spirit_breaker.png" class="spirit_breaker" alt="" />
+      <img src="images/storm_spirit.png" class="storm_spirit" alt="" />
+      <img src="images/sven.png" class="sven" alt="" />
+      <img src="images/techies.png" class="techies" alt="" />
+      <img src="images/templar_assassin.png" class="templar_assassin" alt="" />
+      <img src="images/terrorblade.png" class="terrorblade" alt="" />
+      <img src="images/tidehunter.png" class="tidehunter" alt="" />
+      <img src="images/shredder.png" class="timbersaw" alt="" />
+      <img src="images/tinker.png" class="tinker" alt="" />
+      <img src="images/tiny.png" class="tiny" alt="" />
+      <img src="images/treant.png" class="treant_protector" alt="" />
+      <img src="images/troll_warlord.png" class="troll_warlord" alt="" />
+      <img src="images/tusk.png" class="tusk" alt="" />
+      <img src="images/underlord.png" class="underlord" alt="" />
+      <img src="images/undying.png" class="undying" alt="" />
+      <img src="images/ursa.png" class="ursa" alt="" />
+      <img src="images/vengefulspirit.png" class="vengeful_spirit" alt="" />
+      <img src="images/venomancer.png" class="venomancer" alt="" />
+      <img src="images/viper.png" class="viper" alt="" />
+      <img src="images/visage.png" class="visage" alt="" />
+      <img src="images/void_spirit.png" class="void_spirit" alt="" />
+      <img src="images/warlock.png" class="warlock" alt="" />
+      <img src="images/weaver.png" class="weaver" alt="" />
+      <img src="images/windrunner.png" class="windranger" alt="" />
+      <img src="images/winter_wyvern.png" class="winter_wyvern" alt="" />
+      <img src="images/witch_doctor.png" class="witch_doctor" alt="" />
+      <img src="images/skeleton_king.png" class="wraith_king" alt="" />
+      <img src="images/zuus.png" class="zeus" alt="" />
+      <ul id="stats"></ul>
     </main>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
