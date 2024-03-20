@@ -134,7 +134,7 @@ async function selectImage(event) {
                   : stats[property].slice();
 
             // Name & Main info edit
-            if (property === "name" || property === "mainInfo") {
+            if (property === "name") {
                val = val
                   .replace(/[_]/g, " ")
                   .split(" ")
@@ -145,6 +145,9 @@ async function selectImage(event) {
                           word.slice(1).toLowerCase()
                   )
                   .join(" ");
+            }
+            if (property === "mainInfo") {
+               val = val.slice(0, 1).toUpperCase() + val.slice(1).toLowerCase();
             }
 
             // Complexity edit

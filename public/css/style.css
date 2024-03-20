@@ -70,9 +70,7 @@ main {
    gap: 12px;
 }
 img {
-   flex: 0 1 10%;
-   min-width: 170px;
-   max-width: 220px;
+   flex: 0 1;
 }
 
 .hidden {
