@@ -117,6 +117,7 @@ async function selectImage(event) {
             (hero) => hero["name"] === selectedHero
          )[0];
 
+         // Show each hero-property on an HTML list
          for (const property in stats) {
             const listItem = document.createElement("li");
             const spanProperty = document.createElement("span");
