@@ -1,85 +1,85 @@
 /* General settings */
 :root {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   font-family: "Roboto", sans-serif;
 }
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 body {
-  background-color: hsla(341, 0%, 15%, 1);
-  color: hsla(341, 0%, 68%, 1);
-  margin: 0.5rem;
-  padding: 0;
-  display: flex;
+   background-color: hsla(341, 0%, 15%, 1);
+   color: hsla(341, 0%, 68%, 1);
+   margin: 0.5rem;
+   padding: 0;
+   display: flex;
 }
 
 /* Scrollbar design */
 body::-webkit-scrollbar {
-  width: 0.4rem;
+   width: 0.4rem;
 }
 body::-webkit-scrollbar-track {
-  background: black;
+   background: black;
 }
 body::-webkit-scrollbar-thumb {
-  background: hsla(341, 0%, 68%, 1);
+   background: hsla(341, 0%, 68%, 1);
 }
 
 /* Navbar design */
 .navbar {
-  width: 8rem;
-  height: 100vh;
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+   width: 8rem;
+   height: 100vh;
+   position: fixed;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: left;
 }
 
 h2 + span {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
+   margin-top: 4rem;
+   margin-bottom: 1rem;
 }
 .navbox {
-  margin-top: 1rem;
-  padding: 0.5rem 0;
-  border: 0px hsla(202, 8%, 43%, 1) solid;
-  background-color: hsla(202, 8%, 22%, 1);
-  width: auto;
+   margin-top: 1rem;
+   padding: 0.5rem 0;
+   border: 0px hsla(202, 8%, 43%, 1) solid;
+   background-color: hsla(202, 8%, 22%, 1);
+   width: auto;
 }
 span + div {
-  margin-top: 0.5rem;
+   margin-top: 0.5rem;
 }
 div > input {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
+   width: 15px;
+   height: 15px;
+   cursor: pointer;
 }
 label {
-  cursor: pointer;
+   cursor: pointer;
 }
 
 /* Images' design */
 main {
-  margin-left: 8rem;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 12px;
+   margin-left: 8rem;
+   padding: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   gap: 12px;
 }
 img {
-  /* flex: 0 1 20%; */
-  /* min-width: 170px;
-  max-width: 220px; */
+   flex: 0 1 10%;
+   min-width: 170px;
+   max-width: 220px;
 }
 
 .hidden {
-  display: none;
+   display: none;
 }
 
 #stats {
-  list-style-type: none;
-  align-content: center;
+   list-style-type: none;
+   align-content: center;
 }
