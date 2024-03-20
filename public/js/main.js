@@ -1,4 +1,6 @@
 const baseUrl = "http://localhost:8000/heroes";
+const reset = document.getElementById("reset");
+const list = document.getElementById("stats");
 const checkboxMelee = document.getElementById("checkboxMelee");
 const checkboxRanged = document.getElementById("checkboxRanged");
 const checkboxStr = document.getElementById("checkboxStr");
@@ -13,6 +15,9 @@ const checkboxes = [
    checkboxInt,
    checkboxUni,
 ];
+
+//Assigning eventListener on reset checkbox
+reset.addEventListener("click", resetFilters);
 
 //Loop through all navbar-checkboxes to add eventListeners
 const filters = document.querySelectorAll(".filterHeroes");
@@ -103,10 +108,17 @@ async function selectImage(event) {
    try {
       const clickedImage = event.target;
       const selectedHero = clickedImage.className;
-      const list = document.getElementById("stats");
+      let selectedHeroCache = false;
 
       if (!clickedImage.hasAttribute("id")) {
          clickedImage.id = "selected";
+
+         // Disable checkboxes when image is selected
+         selectedHeroCache = true;
+         checkboxes.forEach(
+            (box) => selectedHeroCache && (box.disabled = true)
+         );
+
          const heroes = await getHeroes();
          heroes.forEach((hero) => {
             const targetHero = document.querySelector(`.${hero["name"]}`);
@@ -187,6 +199,7 @@ async function selectImage(event) {
          }
       } else {
          clickedImage.removeAttribute("id");
+         checkboxes.forEach((box) => (box.disabled = false));
          list.textContent = "";
 
          const heroes = await getHeroes();
@@ -200,4 +213,16 @@ async function selectImage(event) {
    } catch (error) {
       console.error(error);
    }
+}
+
+//eventListener: resetFilters
+async function resetFilters() {
+   checkboxes.forEach((box) => ((box.checked = false), (box.disabled = false)));
+   list.textContent = "";
+   const heroes = await getHeroes();
+   heroes.forEach((hero) => {
+      const targetHero = document.querySelector(`.${hero["name"]}`);
+      targetHero.removeAttribute("id");
+   });
+   await filterHeroes();
 }
